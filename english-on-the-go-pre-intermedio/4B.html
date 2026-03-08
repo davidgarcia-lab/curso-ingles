@@ -5,56 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
 
-<h1>English on the go! </h1>
+<header id="hello-header">
 
-<nav>
-  <a href="../index.html">Curso</a>
- 
-</nav>
-
+<h1>English on the go!</h1>
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 17/07/2025</div>
 
 <div id="segmento">
 
-                                <div id="story_6">
-                                    <p>
+<div class="lesson-reader">
 
-                                        <div class="player-fixed">
+<div class="player-fixed">
                                         
-                                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/58G8OejpLmlhypxnGTtaxZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                        
-                                        </div>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/58G8OejpLmlhypxnGTtaxZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-                                        1. READING & VOCABULARY – Shopping Around the World<br><br>
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
+
+1. READING & VOCABULARY – Shopping Around the World<br><br>
 Hoy nos vamos de compras. Pero no a cualquier lugar… hablaremos de <span id="sufijo_20">shopping</span> – <span id="sufijo_14">las compras</span> – y de las <span id="sufijo_20">global chain stores</span>, esas tiendas internacionales que vemos en casi todas las ciudades: Zara, H&M, Nike, Apple, IKEA, Uniqlo.<br><br>
 Sí, esas tiendas que parecen estar en todas partes del mundo. Vamos a leer un pequeño texto sobre ellas.<br><br>
 Texto en inglés:<br>
@@ -309,97 +293,17 @@ Recuerda: <span id="sufijo_20">Shopping isn’t only about buying things – it�
 Y eso también aplica al aprendizaje. Aprender inglés es una elección inteligente.<br><br>
 Gracias por acompañarnos en <span id="sufijo_20">English on the Go!</span>, donde aprender inglés es práctico, dinámico y divertido.
 
+</div>
 
+<script src="../js/script.js"></script>
 
-                                        
-                                    </p>
-                            
-                                </div>
-                                                
+</p>  
 
-                                  
-
-                                <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const storyElement = document.getElementById('story_6');
-    if (!storyElement) return;
-
-    const highlightedWords = ['actresses', 'advantages', 'argument', 'awful', 'been', 'being', 'belt', 'bought', 'bride', 'bridegroom', 'checkout', 'clothes', 'completely', 'costume', 'course', 'customers', 'deals', 'diagnosed', 'dress', 'dyslexic', 'enough', 'ever', 'fallen', 'feeling', 'female', 'few', 'fitting', 'goodness', 'heels', 'high', 'hurry', 'including', 'interview', 'knock', 'leather', 'leave', 'mind', 'outfit', 'receipt', 'sadly', 'salesperson', 'secretarial', 'sense', 'signed', 'sold', 'stripes', 'successful', 'teeth', 'tight', 'took', 'tried', 'want', 'wearing', 'wedding', 'worn', 'worried', 'younger'];
-
-    // === 1. Resaltar palabras ===
-    let html = storyElement.innerHTML;
-    highlightedWords.forEach(word => {
-        const rx = new RegExp(`\\b(${word})\\b`, 'gi');
-        html = html.replace(
-            rx,
-            `<span class="highlighted" data-word="$1">$1</span>`
-        );
-    });
-    storyElement.innerHTML = html;
-
-    // === 2. Estilos de resaltado ===
-    const style = document.createElement("style");
-    style.innerHTML = `
-        .highlighted {
-            cursor: pointer;
-            background-color: #f8d7a9;   /* Fondo tipo resaltador */
-            padding: 1px 3px;
-            border-radius: 3px;
-            transition: background-color 0.2s ease-in-out;
-        }
-        .highlighted:hover {
-            background-color: #f1c27d;   /* Color un poco más fuerte al pasar */
-        }
-    `;
-    document.head.appendChild(style);
-
-    // === 3. Configuración global ===
-    const basePath = '../descargas/audios/vocabulario/';
-    const audio = new Audio();
-    let triedMp3 = false;
-
-    // === 4. Cargar WAV primero ===
-    function setAudioSource(word) {
-        triedMp3 = false;
-        const safeWord = encodeURIComponent(word.replace(/\s+/g, '-').toLowerCase());
-        audio.src = `${basePath}${safeWord}.wav`;
-        audio.load();
-    }
-
-    // === 5. Si falla WAV, probar MP3 ===
-    audio.addEventListener('error', () => {
-        if (!triedMp3) {
-            triedMp3 = true;
-            const src = audio.src.replace(/\.wav$/i, '.mp3');
-            audio.src = src;
-            audio.load();
-            audio.play().catch(err => {
-                console.error('Error al reproducir MP3:', err);
-            });
-        }
-    });
-
-    // === 6. Reproducir al pasar el cursor ===
-    storyElement.addEventListener('mouseenter', e => {
-        const span = e.target.closest('.highlighted');
-        if (!span) return;
-
-        const word = span.dataset.word;
-        setAudioSource(word);
-
-        audio.currentTime = 0;
-        audio.play().catch(err => {
-            console.warn('Error al reproducir audio:', err);
-        });
-    }, true);
-});
-</script>
-
-
-
+</div>
 
 
 </div>
+
 
 </div>
 

@@ -5,57 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
+
+<header id="hello-header">
 
 <h1>English on the go!</h1>
-
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 17/07/2025</div>
 
 <div id="segmento">
 
-                                <div id="story_6">
-                                    <p>
+<div class="lesson-reader">
 
-                                        <div class="player-fixed">
+<div class="player-fixed">
                                         
-                                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2GGxReT7zMXU6wc88eRBTr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                        
-                                        </div>
-                                            
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2GGxReT7zMXU6wc88eRBTr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-                                        1. READING & LISTENING<br><br>
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
+
+1. READING & LISTENING<br><br>
 Bienvenidos a English on the Go!, el espacio donde aprendemos inglés de forma dinámica, práctica y divertida. Hoy hablaremos de un tema que todos conocemos muy bien: <span id="sufijo_20">housework</span> – <span id="sufijo_14">las tareas del hogar</span>.<br><br>
 Exactamente. Y además, aprenderemos a usar el <span id="sufijo_20">present perfect</span> con <span id="sufijo_20">yet</span>, <span id="sufijo_20">just</span> y <span id="sufijo_20">already</span>. También veremos cuándo usamos <span id="sufijo_20">make</span> o <span id="sufijo_20">do</span> con las tareas domésticas.<br><br>
 Empecemos con una lectura interesante. Escucha atentamente:<br><br>
@@ -313,97 +296,17 @@ Recuerda: <span id="sufijo_20">Housework isn’t just work, it’s also good exe
 Y cada vez que digas <span id="sufijo_20">I’ve already done it</span>, sabrás que estás usando un inglés natural y correcto.<br><br>
 Gracias por acompañarnos en <span id="sufijo_20">English on the Go!</span>, donde aprender inglés es una aventura divertida y práctica.
 
+</div>
 
+<script src="../js/script.js"></script>
 
-                                        
-                                    </p>
-                            
-                                </div>
-                                                
+</p>  
 
-                                  
-
-                                <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const storyElement = document.getElementById('story_6');
-    if (!storyElement) return;
-
-    const highlightedWords = ['teenagers', 'annoying', 'knocking', 'leave', 'mess', 'roll', 'wet towels', 'elves', 'dishwasher', 'wrong', 'whenever', 'either', 'borrowed', 'messy', 'caregivers', 'care', 'disease', 'wheelchair', 'grocery'];
-
-    // === 1. Resaltar palabras ===
-    let html = storyElement.innerHTML;
-    highlightedWords.forEach(word => {
-        const rx = new RegExp(`\\b(${word})\\b`, 'gi');
-        html = html.replace(
-            rx,
-            `<span class="highlighted" data-word="$1">$1</span>`
-        );
-    });
-    storyElement.innerHTML = html;
-
-    // === 2. Estilos de resaltado ===
-    const style = document.createElement("style");
-    style.innerHTML = `
-        .highlighted {
-            cursor: pointer;
-            background-color: #f8d7a9;   /* Fondo tipo resaltador */
-            padding: 1px 3px;
-            border-radius: 3px;
-            transition: background-color 0.2s ease-in-out;
-        }
-        .highlighted:hover {
-            background-color: #f1c27d;   /* Color un poco más fuerte al pasar */
-        }
-    `;
-    document.head.appendChild(style);
-
-    // === 3. Configuración global ===
-    const basePath = '../descargas/audios/vocabulario/';
-    const audio = new Audio();
-    let triedMp3 = false;
-
-    // === 4. Cargar WAV primero ===
-    function setAudioSource(word) {
-        triedMp3 = false;
-        const safeWord = encodeURIComponent(word.replace(/\s+/g, '-').toLowerCase());
-        audio.src = `${basePath}${safeWord}.wav`;
-        audio.load();
-    }
-
-    // === 5. Si falla WAV, probar MP3 ===
-    audio.addEventListener('error', () => {
-        if (!triedMp3) {
-            triedMp3 = true;
-            const src = audio.src.replace(/\.wav$/i, '.mp3');
-            audio.src = src;
-            audio.load();
-            audio.play().catch(err => {
-                console.error('Error al reproducir MP3:', err);
-            });
-        }
-    });
-
-    // === 6. Reproducir al pasar el cursor ===
-    storyElement.addEventListener('mouseenter', e => {
-        const span = e.target.closest('.highlighted');
-        if (!span) return;
-
-        const word = span.dataset.word;
-        setAudioSource(word);
-
-        audio.currentTime = 0;
-        audio.play().catch(err => {
-            console.warn('Error al reproducir audio:', err);
-        });
-    }, true);
-});
-</script>
-
-
-
+</div>
 
 
 </div>
+
 
 </div>
 

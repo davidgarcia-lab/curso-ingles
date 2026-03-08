@@ -5,54 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
+
+<header id="hello-header">
 
 <h1>English on the go!</h1>
-
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 17/07/2025</div>
 
 <div id="segmento">
 
-                                <div id="story">
-                                    <p>
-                                                <div class="player-fixed">
-                                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0cQDxntMqq5gFm3pVpYt1S?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                                </div>
-                                                
+<div class="lesson-reader">
 
-                                                Bienvenidos a English in the Go! con Anna y Ben. Hoy conectamos pensamiento positivo y negativo con gramática práctica. Nuestro objetivo: predecir el futuro con will / won’t y entender cuándo el pesimismo puede ayudarnos.<br><br>
+<div class="player-fixed">
+                                        
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0cQDxntMqq5gFm3pVpYt1S?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
+
+Bienvenidos a English in the Go! con Anna y Ben. Hoy conectamos pensamiento positivo y negativo con gramática práctica. Nuestro objetivo: predecir el futuro con will / won’t y entender cuándo el pesimismo puede ayudarnos.<br><br>
 Great! <span id="sufijo_20">Let’s mix real-life ideas with clear language</span> – <span id="sufijo_14">Mezclemos ideas reales con lenguaje claro</span>. Empezamos con una lectura que escucharás conmigo. No necesitas traducirla; solo presta atención a las ideas.<br><br>
 1. READING & LISTENING<br><br>
 Escucha esta lectura sobre el “pesimismo defensivo”. Después comentamos.<br><br>
@@ -277,100 +263,17 @@ Gracias por acompañarnos en English in the Go!, donde el inglés se convierte e
 <span id="sufijo_20">Your English will improve, and so will your mindset.</span> – <span id="sufijo_14">Tu inglés mejorará, y también tu mentalidad</span>.
 
 
-                                            
-                                    </p>
-                            
-                                </div>
-                                                
+</div>
 
-                                <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const storyElement = document.getElementById('story');
-    if (!storyElement) return;
+<script src="../js/script.js"></script>
 
-    const highlightedWords = ['average', 'avoid', 'avoiding', 'believe', 'borrow', 'bottom', 'character', 'cheer up', 'clouds', 'definitely', 'doubt', 'drop', 'early', 'empty', 'even', 'half', 'healthier', 'hope', 'instead', 'joked', 'learn', 'leave', 'lent', 'lose', 'luggage', 'ones', 'opposite', 'own', 'pass', 'pessimist', 'positively', 'receive', 'says', 'sick', 'still', 'strangers', 'successful', 'taking', 'thoughts', 'worried', 'worst', 'yard'];
-
-    // === 1. Resaltar palabras ===
-    let html = storyElement.innerHTML;
-    highlightedWords.forEach(word => {
-        const rx = new RegExp(`\\b(${word})\\b`, 'gi');
-        html = html.replace(
-            rx,
-            `<span class="highlighted" data-word="$1">$1</span>`
-        );
-    });
-    storyElement.innerHTML = html;
-
-    // === 2. Estilos de resaltado ===
-    const style = document.createElement("style");
-    style.innerHTML = `
-        .highlighted {
-            cursor: pointer;
-            background-color: #f8d7a9;   /* Fondo tipo resaltador */
-            padding: 1px 3px;
-            border-radius: 3px;
-            transition: background-color 0.2s ease-in-out;
-        }
-        .highlighted:hover {
-            background-color: #f1c27d;   /* Color un poco más fuerte al pasar */
-        }
-    `;
-    document.head.appendChild(style);
-
-    // === 3. Configuración global ===
-    const basePath = '../descargas/audios/vocabulario/';
-    const audio = new Audio();
-    let triedMp3 = false;
-
-    // === 4. Cargar WAV primero ===
-    function setAudioSource(word) {
-        triedMp3 = false;
-        const safeWord = encodeURIComponent(word.replace(/\s+/g, '-').toLowerCase());
-        audio.src = `${basePath}${safeWord}.wav`;
-        audio.load();
-    }
-
-    // === 5. Si falla WAV, probar MP3 ===
-    audio.addEventListener('error', () => {
-        if (!triedMp3) {
-            triedMp3 = true;
-            const src = audio.src.replace(/\.wav$/i, '.mp3');
-            audio.src = src;
-            audio.load();
-            audio.play().catch(err => {
-                console.error('Error al reproducir MP3:', err);
-            });
-        }
-    });
-
-    // === 6. Reproducir al pasar el cursor ===
-    storyElement.addEventListener('mouseenter', e => {
-        const span = e.target.closest('.highlighted');
-        if (!span) return;
-
-        const word = span.dataset.word;
-        setAudioSource(word);
-
-        audio.currentTime = 0;
-        audio.play().catch(err => {
-            console.warn('Error al reproducir audio:', err);
-        });
-    }, true);
-});
-</script>
-
-
-
-   
-
-
-
-
-<div id="segmento_final">
+</p>  
 
 </div>
 
+
 </div>
+
 
 </div>
 
@@ -378,3 +281,4 @@ document.addEventListener('DOMContentLoaded', () => {
 </body>
 
 </html>
+

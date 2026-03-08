@@ -5,55 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
+
+<header id="hello-header">
 
 <h1>English on the go!</h1>
-
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 17/07/2025</div>
 
 <div id="segmento">
 
-                                <div id="story">
-                                    <p>
-                                            <div class="player-fixed">
-                                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0RLXXUNOnMncSGL1oag1zH?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                           </div>
-                                           
-                                           
-                                           
-                                            1. SPEAKING & LISTENING – What Do You Drink?<br><br>
+<div class="lesson-reader">
+
+<div class="player-fixed">
+                                        
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0RLXXUNOnMncSGL1oag1zH?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
+
+1. SPEAKING & LISTENING – What Do You Drink?<br><br>
 ¡Hola a todos! Bienvenidos nuevamente a English on the Go!, el podcast donde aprendemos inglés y hablamos de temas reales. Hoy empezamos con una pregunta muy simple, pero muy importante: <span id="sufijo_20">How much is enough?</span> – <span id="sufijo_14">¿Cuánto es suficiente?</span><br><br>
 ¡Exacto! Hablaremos sobre bebidas, salud y buenos hábitos. ¿Qué tanto bebemos realmente cada día?<br><br>
 Vamos a empezar con una conversación sencilla. Escucha y repite mentalmente:<br><ul>
@@ -296,101 +281,17 @@ Hoy aprendimos a usar <span id="sufijo_20">too much</span>, <span id="sufijo_20"
 Esto fue <span id="sufijo_20">English on the Go!</span>, el podcast donde aprendes inglés y algo más sobre la vida.<br><br>
 <span id="sufijo_20">See you next time! Stay healthy, stay balanced!</span> – <span id="sufijo_14">¡Hasta la próxima! Mantente saludable y en equilibrio.</span>
 
+</div>
 
-                                            
-                                    </p>
-                            
-                                </div>
-                                                
+<script src="../js/script.js"></script>
 
-                                <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const storyElement = document.getElementById('story');
-    if (!storyElement) return;
-
-    const highlightedWords = ['aggressive', 'architecture', 'being', 'both', 'bought', 'cleanest', 'crowded', 'dirtiest', 'fell', 'foreign', 'friendliest', 'gave', 'generous', 'gives', 'ground', 'impatient', 'inhabitants', 'museums', 'polite', 'polluted', 'rude', 'said', 'stylish', 'survey', 'trips', 'verdict'];
-
-    // === 1. Resaltar palabras ===
-    let html = storyElement.innerHTML;
-    highlightedWords.forEach(word => {
-        const rx = new RegExp(`\\b(${word})\\b`, 'gi');
-        html = html.replace(
-            rx,
-            `<span class="highlighted" data-word="$1">$1</span>`
-        );
-    });
-    storyElement.innerHTML = html;
-
-    // === 2. Estilos de resaltado ===
-    const style = document.createElement("style");
-    style.innerHTML = `
-        .highlighted {
-            cursor: pointer;
-            background-color: #f8d7a9;   /* Fondo tipo resaltador */
-            padding: 1px 3px;
-            border-radius: 3px;
-            transition: background-color 0.2s ease-in-out;
-        }
-        .highlighted:hover {
-            background-color: #f1c27d;   /* Color un poco más fuerte al pasar */
-        }
-    `;
-    document.head.appendChild(style);
-
-    // === 3. Configuración global ===
-    const basePath = '../descargas/audios/vocabulario/';
-    const audio = new Audio();
-    let triedMp3 = false;
-
-    // === 4. Cargar WAV primero ===
-    function setAudioSource(word) {
-        triedMp3 = false;
-        const safeWord = encodeURIComponent(word.replace(/\s+/g, '-').toLowerCase());
-        audio.src = `${basePath}${safeWord}.wav`;
-        audio.load();
-    }
-
-    // === 5. Si falla WAV, probar MP3 ===
-    audio.addEventListener('error', () => {
-        if (!triedMp3) {
-            triedMp3 = true;
-            const src = audio.src.replace(/\.wav$/i, '.mp3');
-            audio.src = src;
-            audio.load();
-            audio.play().catch(err => {
-                console.error('Error al reproducir MP3:', err);
-            });
-        }
-    });
-
-    // === 6. Reproducir al pasar el cursor ===
-    storyElement.addEventListener('mouseenter', e => {
-        const span = e.target.closest('.highlighted');
-        if (!span) return;
-
-        const word = span.dataset.word;
-        setAudioSource(word);
-
-        audio.currentTime = 0;
-        audio.play().catch(err => {
-            console.warn('Error al reproducir audio:', err);
-        });
-    }, true);
-});
-</script>
-
-
-
-   
-
-
-
-
-<div id="segmento_final">
+</p>  
 
 </div>
 
+
 </div>
+
 
 </div>
 
