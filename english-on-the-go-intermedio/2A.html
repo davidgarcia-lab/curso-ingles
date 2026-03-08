@@ -5,63 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
 
-<h1>English on the go! </h1>
+<header id="hello-header">
 
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
+<h1>English on the go!</h1>
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 26/08/2025</div>
 
 <div id="segmento">
 
-                                <div id="story">
-                                    
-                                        <p>
+<div class="lesson-reader">
 
-                                            <div class="player-fixed">
+<div class="player-fixed">
                                         
-                                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3pam9DYXc1wbovVo8WNDa0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                        
-                                        </div>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3pam9DYXc1wbovVo8WNDa0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-                                        <br><br>
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
 
 <button id="toggleBtn">Mostrar traducción</button>
-
 <br><br>
-                                            
-                                              <b>1. READING & LISTENING</b><br><br>
+<b>1. READING & LISTENING</b><br><br>
 Welcome to English in the Go! Today Anna and I are going on an adventure about <span id="sufijo_20">“Spending Money.”</span> We want you to listen, speak, read, and write with us. So let’s start with a story that will help us think about how we use money every day.<br>
 <span id="sufijo_14">Bienvenido a English in the Go! Hoy Anna y yo vamos a una aventura sobre "Gastar Dinero". Queremos que escuches, hables, leas y escribas con nosotros. Así que comencemos con una historia que nos ayudará a pensar en cómo usamos el dinero cada día.</span><br><br>
 Right. We’ll read a real story about a woman who decided to stop spending money for one whole year. As you listen, pay attention to the details, because later we’ll talk about habits, vocabulary about <span id="sufijo_20">money</span>, and grammar that helps us describe past experiences.<br>
@@ -353,42 +332,22 @@ Keep practicing, keep speaking, and keep improving your English.<br>
 This has been English in the Go! See you next time.<br>
 <span id="sufijo_14">Esto ha sido English in the Go! Nos vemos la próxima vez.</span><br><br>
 
+</div>
 
+<script src="../js/script.js"></script>
 
-                                        </p>
+<script src="../js/script2.js"></script>
 
-                            
-                                </div>
-                                                
-
-                <script>
-  // SOLO BUSCARÁ EL BOTÓN SI ESTÁ DENTRO DE ESTA PÁGINA
-  const page = document.getElementById("story");
-
-  if (page) {
-    const button = page.querySelector("#toggleBtn");
-    let visible = false;
-
-    button.addEventListener("click", () => {
-      const spans = page.querySelectorAll("#sufijo_14");
-      visible = !visible;
-
-      spans.forEach(span => {
-        span.style.display = visible ? "inline" : "none";
-      });
-
-      button.textContent = visible ? "Ocultar traducción" : "Mostrar traducción";
-    });
-  }
-</script>
-                 
-
-                                
+</p> 
 
 
 
 
 </div>
+
+
+</div>
+
 
 </div>
 
@@ -396,3 +355,4 @@ This has been English in the Go! See you next time.<br>
 </body>
 
 </html>
+

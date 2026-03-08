@@ -5,57 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
-    
     <link rel="stylesheet" href="../css/estilos1.css">
-
+    
 
 </head>
+
 <body>
 
-<header>
 
-<h1>English on the go! </h1>
+<header id="hello-header">
 
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
+<h1>English on the go!</h1>
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 26/08/2025</div>
 
 <div id="segmento">
 
-                                <div id="story">
-                                    
-                                        <p>
+<div class="lesson-reader">
 
-                                            <div class="player-fixed">
+<div class="player-fixed">
                                         
-                                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3MvR8ta4iAXE5n6qb71KHZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                        
-                                        </div>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3MvR8ta4iAXE5n6qb71KHZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-                                        <br><br>
+</div>
+
+
+
+<p>
+                                        
+<div id="texto">
 
 <button id="toggleBtn">Mostrar traducción</button>
 
@@ -326,41 +307,22 @@ Keep practicing your English, keep helping others, and keep believing in the pow
 This has been English in the Go! Hasta la próxima.<br>
 <span id="sufijo_14">Esto ha sido English in the Go! Hasta la próxima.</span><br><br>
 
+</div>
 
-                                        </p>
+<script src="../js/script.js"></script>
 
-                            
-                                </div>
-                                                
+<script src="../js/script2.js"></script>
 
-                <script>
-  // SOLO BUSCARÁ EL BOTÓN SI ESTÁ DENTRO DE ESTA PÁGINA
-  const page = document.getElementById("story");
-
-  if (page) {
-    const button = page.querySelector("#toggleBtn");
-    let visible = false;
-
-    button.addEventListener("click", () => {
-      const spans = page.querySelectorAll("#sufijo_14");
-      visible = !visible;
-
-      spans.forEach(span => {
-        span.style.display = visible ? "inline" : "none";
-      });
-
-      button.textContent = visible ? "Ocultar traducción" : "Mostrar traducción";
-    });
-  }
-</script>
-                 
-
-                                
+</p> 
 
 
 
 
 </div>
+
+
+</div>
+
 
 </div>
 

@@ -5,57 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
+    <link rel="stylesheet" href="../css/estilos1.css">
     
-    <link rel="stylesheet" href="../css/estilos.css">
-
 
 </head>
+
 <body>
 
-<header>
+
+<header id="hello-header">
 
 <h1>English on the go!</h1>
-
-<nav>
-  <a href="../index.html">Curso</a>
-  
-</nav>
-
 
 </header>
 
 
-
-
 <div class="contenedor" >
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-
-
-
-
-<div id="texto_2">Última actualización 17/07/2025</div>
 
 <div id="segmento">
 
-  <div id="story">
-
-<p>
+<div class="lesson-reader">
 
 <div class="player-fixed">
                                         
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/13kIoRVSTFk7w640HEwrNd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                        
+
 </div>
 
-<br><br>
+
+
+<p>
+                                        
+<div id="texto">
 
 <button id="toggleBtn">Mostrar traducción</button>
 
@@ -245,38 +226,22 @@ That’s right. Keep practicing your English, enjoy your meals, and join us agai
 <br><br>
 
 
-   
-</p>
-
 </div>
-   
-<script>
-  // SOLO BUSCARÁ EL BOTÓN SI ESTÁ DENTRO DE ESTA PÁGINA
-  const page = document.getElementById("story");
 
-  if (page) {
-    const button = page.querySelector("#toggleBtn");
-    let visible = false;
+<script src="../js/script.js"></script>
 
-    button.addEventListener("click", () => {
-      const spans = page.querySelectorAll("#sufijo_14");
-      visible = !visible;
+<script src="../js/script2.js"></script>
 
-      spans.forEach(span => {
-        span.style.display = visible ? "inline" : "none";
-      });
-
-      button.textContent = visible ? "Ocultar traducción" : "Mostrar traducción";
-    });
-  }
-</script>
-            
-
+</p> 
 
 
 
 
 </div>
+
+
+</div>
+
 
 </div>
 
@@ -284,3 +249,4 @@ That’s right. Keep practicing your English, enjoy your meals, and join us agai
 </body>
 
 </html>
+
