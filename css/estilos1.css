@@ -133,7 +133,41 @@ body{
   transform: translateY(-1px);
 }
 
+/* HEADER everyone*/
+#everyone-header{
+  background: #1B5573;
 
+  color:#fff;
+  padding: 18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#everyone-header h1{
+  margin:0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+#everyone-header nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.18);
+  transition: .2s ease;
+  white-space: nowrap;
+}
+
+#everyone-header nav a:hover{
+  background: rgba(255,255,255,.28);
+  transform: translateY(-1px);
+}
 
 /* HEADER business*/
 #business-header{
