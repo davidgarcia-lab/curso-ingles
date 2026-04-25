@@ -457,3 +457,18 @@ details[open] summary::after{
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
+
+
+#toggleBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1f6feb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
