@@ -466,6 +466,7 @@ details[open] summary::after{
 #sufijo_14{
   color:#0f766e;
   font-weight: 600;
+  font-style: italic;
 }
 
 #sufijo_21{
@@ -519,4 +520,3 @@ details[open] summary::after{
   cursor: pointer;
 }
 
-#sufijo_14{font-family:'arial';  font-size: 1em; font-style: italic; color:#008080}
