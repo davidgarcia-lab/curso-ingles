@@ -479,6 +479,12 @@ details[open] summary::after{
   font-weight: 600;
 }
 
+#sufijo_23{
+  color:#0f766e;
+  font-weight: 600;
+  
+}
+
 
 /* Móvil */
 @media (max-width: 600px){
