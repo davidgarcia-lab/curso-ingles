@@ -3,186 +3,670 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Escuela de Inglés</title>
+  <title>Hello English! | Escuela de Inglés</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --brand-1:#c0392b;
-      --brand-2:#e67e22;
+      --orange:#e8590c;
+      --orange-dark:#9a3412;
+      --orange-soft:#fff4e8;
+      --yellow:#fbbf24;
+
+      --brown:#2b1608;
       --text:#1f2937;
       --muted:#6b7280;
-      --mint:#e8f8ee;
-      --mint-strong:#d4f5df;
-      --green:#2ecc71;
+      --line:#ead8c6;
+
+      --bg:#fff8f0;
       --card:#ffffff;
-      --bg:#f6f7fb;
-      --shadow: 0 10px 35px rgba(0,0,0,.08);
+
+      --shadow:0 16px 40px rgba(120, 53, 15, .12);
+      --shadow-soft:0 8px 22px rgba(120, 53, 15, .10);
     }
 
-    *{ box-sizing:border-box; }
+    *{
+      box-sizing:border-box;
+    }
+
     body{
       margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       color:var(--text);
-      background:var(--bg);
+      background:
+        linear-gradient(180deg, #fff3df 0%, #fffaf5 45%, #ffffff 100%);
+      min-height:100vh;
     }
 
     header{
-      background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
-      color:#fff;
-      padding: 18px 24px;
+      background:#ffffff;
+      border-bottom:1px solid #f0dfcf;
+      padding:16px 28px;
       display:flex;
       align-items:center;
       justify-content:space-between;
+      
     }
 
-    header h1{
-      margin:0;
-      font-size:1.6rem;
-      font-weight:700;
-      letter-spacing:.5px;
-    }
-
-    header a{
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-      padding:10px 14px;
-      border-radius:10px;
-      background: rgba(255,255,255,.15);
-    }
-
-    main{
-      max-width: 980px;
-      margin: 36px auto;
-      padding: 0 18px;
-    }
-
-    .card{
-      background: var(--card);
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-      padding: 26px;
-    }
-
-    .top{
+    .brand{
       display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
+      align-items:center;
       gap:12px;
     }
 
-    .subtitle{
+    .brand-logo{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  overflow:hidden;
+  flex:0 0 auto;
+  background:#fff;
+  box-shadow:0 8px 18px rgba(232,89,12,.25);
+}
+
+.brand-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+    .brand-title{
+      display:flex;
+      flex-direction:column;
+      line-height:1.1;
+    }
+
+    .brand-title strong{
+      font-size:1.15rem;
+      font-weight:800;
+      color:var(--brown);
+      letter-spacing:-.03em;
+    }
+
+    .brand-title span{
+      margin-top:3px;
+      font-size:.82rem;
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      background:var(--orange);
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:.92rem;
+      box-shadow:0 8px 18px rgba(232,89,12,.22);
+      transition:.2s ease;
+    }
+
+    nav a:hover{
+      background:var(--orange-dark);
+      transform:translateY(-1px);
+    }
+
+    main{
+      max-width:1180px;
+      margin:0 auto;
+      padding:34px 20px 56px;
+    }
+
+    .intro{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:26px;
+      align-items:stretch;
+      margin-bottom:28px;
+    }
+
+    .intro-main{
+      background:#ffffff;
+      border:1px solid #f0dfcf;
+      border-radius:26px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:var(--orange-dark);
+      background:var(--orange-soft);
+      border:1px solid #f3d2b5;
+      padding:8px 13px;
+      border-radius:999px;
+      font-size:.86rem;
+      font-weight:800;
+      margin-bottom:18px;
+    }
+
+    .intro h1{
+      margin:0;
+      max-width:720px;
+      color:var(--brown);
+      font-size:clamp(2rem, 4vw, 3.65rem);
+      line-height:1.02;
+      letter-spacing:-.07em;
+      font-weight:800;
+    }
+
+    .intro h1 span{
+      color:var(--orange);
+    }
+
+    .intro p{
+      margin:18px 0 0;
+      max-width:690px;
+      color:#4b5563;
+      font-size:1.05rem;
+      line-height:1.75;
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:24px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:0 18px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:800;
+      transition:.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--orange);
+      color:#fff;
+      box-shadow:0 10px 20px rgba(232,89,12,.22);
+    }
+
+    .btn-primary:hover{
+      background:var(--orange-dark);
+      transform:translateY(-2px);
+    }
+
+    .btn-light{
+      background:#fff;
+      color:var(--orange-dark);
+      border:1px solid #efc6a6;
+    }
+
+    .btn-light:hover{
+      background:var(--orange-soft);
+      transform:translateY(-2px);
+    }
+
+    .intro-side{
+      display:grid;
+      gap:14px;
+    }
+
+    .stat-card{
+      background:#ffffff;
+      border:1px solid #f0dfcf;
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .stat-card .number{
+      display:block;
+      color:var(--orange);
+      font-size:2rem;
+      font-weight:800;
+      letter-spacing:-.05em;
+      margin-bottom:4px;
+    }
+
+    .stat-card strong{
+      display:block;
+      color:var(--brown);
+      font-size:1rem;
+      margin-bottom:6px;
+    }
+
+    .stat-card p{
       margin:0;
       color:var(--muted);
+      line-height:1.55;
+      font-size:.94rem;
     }
 
-    .update{
+    .section{
+      background:#ffffff;
+      border:1px solid #f0dfcf;
+      border-radius:26px;
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-bottom:22px;
+    }
+
+    .section-head h2{
       margin:0;
+      color:var(--brown);
+      font-size:1.45rem;
+      font-weight:800;
+      letter-spacing:-.04em;
+    }
+
+    .section-head p{
+      margin:7px 0 0;
       color:var(--muted);
-      font-size:.9rem;
+      line-height:1.6;
     }
 
-    .divider{
-      height:1px;
-      background: linear-gradient(90deg, transparent, rgba(46,204,113,.6), transparent);
-      margin: 18px 0;
+    .tag{
+      background:#fff7ed;
+      color:var(--orange-dark);
+      border:1px solid #fed7aa;
+      border-radius:999px;
+      padding:9px 14px;
+      font-weight:800;
+      font-size:.86rem;
+      white-space:nowrap;
     }
 
-    ul{
+    .courses{
       list-style:none;
       padding:0;
       margin:0;
       display:grid;
-      gap:10px;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px;
     }
 
-    a.item{
+    .course{
       display:flex;
       align-items:center;
-      gap:12px;
-      padding:14px 16px;
-      border-radius:12px;
+      gap:14px;
+      min-height:92px;
+      padding:18px;
+      border-radius:18px;
       text-decoration:none;
-      color:#8a3f00;
-      font-weight:600;
       background:#fff;
-      border:1px dashed rgba(46,204,113,.55);
+      color:var(--text);
+      border:1px solid #eee0d2;
+      transition:.2s ease;
+      position:relative;
+    }
+
+    .course:hover{
+      transform:translateY(-3px);
+      border-color:#f0b27a;
+      box-shadow:var(--shadow-soft);
+      background:#fffaf4;
+    }
+
+    .course-icon{
+      width:50px;
+      height:50px;
+      flex:0 0 auto;
+      border-radius:15px;
+      display:grid;
+      place-items:center;
+      background:#fff3df;
+      border:1px solid #f4d3ae;
+      font-size:1.25rem;
+    }
+
+    .course-text{
+      padding-right:22px;
+    }
+
+    .course-text strong{
+      display:block;
+      color:var(--brown);
+      font-size:1rem;
+      font-weight:800;
+      letter-spacing:-.02em;
+      margin-bottom:5px;
+    }
+
+    .course-text small{
+      display:block;
+      color:var(--muted);
+      font-size:.88rem;
+      line-height:1.45;
+      font-weight:500;
+    }
+
+    .arrow{
+      position:absolute;
+      right:18px;
+      color:#d8a16f;
+      font-size:1.5rem;
       transition:.2s ease;
     }
 
-    a.item:hover{
-      background:var(--mint);
-      transform:translateX(6px);
-      box-shadow:0 8px 18px rgba(0,0,0,.08);
+    .course:hover .arrow{
+      right:14px;
+      color:var(--orange);
     }
 
-    a.item.active{
-      background: linear-gradient(90deg, var(--mint-strong), #f3fff7);
-      border-left:7px solid var(--green);
-      color:#136b3b;
+    .closing{
+      margin-top:22px;
+      padding:18px 20px;
+      border-radius:20px;
+      background:linear-gradient(90deg, #fff7ed, #ffffff);
+      border:1px solid #fed7aa;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      color:#5f5147;
+      line-height:1.6;
+      font-size:.94rem;
     }
 
-    .icon{
-      width:32px;
-      height:32px;
-      display:grid;
-      place-items:center;
-      border-radius:10px;
-      background:rgba(46,204,113,.15);
+    .closing strong{
+      color:var(--orange-dark);
     }
 
-    .text small{
-      display:block;
-      font-weight:500;
-      color:var(--muted);
-      font-size:.85rem;
+    @media(max-width:900px){
+      .intro{
+        grid-template-columns:1fr;
+      }
+
+      .intro-side{
+        grid-template-columns:repeat(3, 1fr);
+      }
     }
 
-    @media (max-width:520px){
-      header h1{ font-size:1.3rem; }
-      .card{ padding:20px; }
+    @media(max-width:760px){
+      header{
+        padding:14px 18px;
+      }
+
+      .brand-logo{
+        width:40px;
+        height:40px;
+      }
+
+      .brand-title strong{
+        font-size:1rem;
+      }
+
+      .brand-title span{
+        display:none;
+      }
+
+      nav a{
+        padding:9px 13px;
+        font-size:.86rem;
+      }
+
+      main{
+        padding:24px 16px 44px;
+      }
+
+      .intro-main{
+        padding:26px 22px;
+        border-radius:22px;
+      }
+
+      .intro h1{
+        font-size:2.35rem;
+      }
+
+      .intro p{
+        font-size:1rem;
+      }
+
+      .intro-side{
+        grid-template-columns:1fr;
+      }
+
+      .section{
+        padding:22px;
+        border-radius:22px;
+      }
+
+      .courses{
+        grid-template-columns:1fr;
+      }
+
+      .course{
+        min-height:84px;
+      }
+    }
+
+    @media(max-width:480px){
+      .actions{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .section-head{
+        align-items:flex-start;
+      }
+
+      .tag{
+        white-space:normal;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <h1>Escuela de Inglés</h1>
-    <a href="#">Inicio</a>
+    <div class="brand">
+        <div class="brand-logo">
+            <img src="descargas/imagenes/logo-hello-english2.jpg" alt="Logo Hello English">
+        </div>
+      <div class="brand-title">
+        <strong>Hello English!</strong>
+        <span>Escuela de Inglés</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">Inicio</a>
+    </nav>
   </header>
 
   <main>
-    <section class="card">
-      <div class="top">
-        <p class="subtitle">Tu plataforma de aprendizaje de inglés</p>
-        
+
+    <section class="intro">
+      <div class="intro-main">
+        <div class="eyebrow">🎧 Inglés claro, progresivo y con audio</div>
+
+        <h1>
+          Aprende inglés con una ruta simple, práctica y <span>ordenada.</span>
+        </h1>
+
+        <p>
+          Hello English! reúne cursos, audios, vocabulario, gramática,
+          pronunciación y materiales de práctica para estudiar paso a paso,
+          desde una base inicial hasta situaciones reales de conversación.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#cursos">Explorar cursos</a>
+          <a class="btn btn-light" href="English_on_the_go.html">Escuchar clases</a>
+        </div>
       </div>
 
-      <div class="divider"></div>
+      <div class="intro-side">
+        <div class="stat-card">
+          <span class="number">500+</span>
+          <strong>Clases disponibles</strong>
+          <p>Contenido organizado para avanzar de forma constante.</p>
+        </div>
 
-      <ul>
-        
-        <li><a class="item" href="Hello_English_File.html"><span class="icon">📁</span><span class="text">Hello English! File<small>Material por lecciones</small></span></a></li>
-        <li><a class="item" href="Hello_English_Navigate.html"><span class="icon">🧭</span><span class="text">Hello English! Navigate<small>Ruta guiada</small></span></a></li>
-        <li><a class="item" href="English_on_the_go.html" ><span class="icon">🎧</span><span class="text">English on the go!<small>Escucha diaria</small></span></a></li>
-        <li><a class="item" href="English_explorer.html"><span class="icon">🗺️</span><span class="text">English Explorer<small>Temas y conversación</small></span></a></li>
-        <li><a class="item active" href="English_for_everyone.html"><span class="icon">🌍</span><span class="text">English for everyone<small>Base sólida</small></span></a></li>
-        
-        <li><a class="item" href="English_for_business.html"><span class="icon">💼</span><span class="text">English for Business<small>Contexto laboral</small></span></a></li>
-        <li><a class="item" href="English_grammar.html"><span class="icon">📘</span><span class="text">English Grammar<small>Reglas claras</small></span></a></li>
-        
-        <li><a class="item" href="English_pronunciation.html"><span class="icon">🗣️</span><span class="text">English Pronunciation<small>IPA y speaking</small></span></a></li>
-        
-        <li><a class="item" href="Vocabulary_English_Lab.html"><span class="icon">🧠</span><span class="text">Vocabulary English Lab<small>Vocabulario</small></span></a></li>
-        <li><a class="item" href="American_English_File.html"><span class="icon">🇺🇸</span><span class="text">American English File<small>Enfoque USA</small></span></a></li>
-      </ul>
+        <div class="stat-card">
+          <span class="number">10</span>
+          <strong>Secciones de estudio</strong>
+          <p>Rutas, gramática, pronunciación, vocabulario y más.</p>
+        </div>
+
+        <div class="stat-card">
+          <span class="number">24/7</span>
+          <strong>Acceso digital</strong>
+          <p>Estudia cuando quieras, desde cualquier dispositivo.</p>
+        </div>
+      </div>
     </section>
+
+    <section class="section" id="cursos">
+      <div class="section-head">
+        <div>
+          <h2>Cursos y materiales</h2>
+          <p>Selecciona una sección para comenzar tu aprendizaje.</p>
+        </div>
+
+        <div class="tag">Plataforma de aprendizaje de inglés</div>
+      </div>
+
+      <ul class="courses">
+
+        <li>
+          <a class="course" href="Hello_English_File.html">
+            <span class="course-icon">📁</span>
+            <span class="course-text">
+              <strong>Hello English! File</strong>
+              <small>Material organizado por lecciones para estudiar paso a paso.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="Hello_English_Navigate.html">
+            <span class="course-icon">🧭</span>
+            <span class="course-text">
+              <strong>Hello English! Navigate</strong>
+              <small>Ruta guiada para seguir una secuencia clara de aprendizaje.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_on_the_go.html">
+            <span class="course-icon">🎧</span>
+            <span class="course-text">
+              <strong>English on the go!</strong>
+              <small>Escucha diaria para practicar inglés en cualquier momento.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_explorer.html">
+            <span class="course-icon">🗺️</span>
+            <span class="course-text">
+              <strong>English Explorer</strong>
+              <small>Temas, conversación y comprensión para ampliar tu inglés.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_for_everyone.html">
+            <span class="course-icon">🌍</span>
+            <span class="course-text">
+              <strong>English for everyone</strong>
+              <small>Base sólida para aprender desde cero y reforzar fundamentos.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_for_business.html">
+            <span class="course-icon">💼</span>
+            <span class="course-text">
+              <strong>English for Business</strong>
+              <small>Inglés para trabajo, reuniones y comunicación profesional.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_grammar.html">
+            <span class="course-icon">📘</span>
+            <span class="course-text">
+              <strong>English Grammar</strong>
+              <small>Reglas claras, ejemplos simples y práctica gramatical.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="English_pronunciation.html">
+            <span class="course-icon">🗣️</span>
+            <span class="course-text">
+              <strong>English Pronunciation</strong>
+              <small>Pronunciación, sonidos, IPA y práctica de speaking.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="Vocabulary_English_Lab.html">
+            <span class="course-icon">🧠</span>
+            <span class="course-text">
+              <strong>Vocabulary English Lab</strong>
+              <small>Vocabulario por temas, niveles y situaciones reales.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="course" href="American_English_File.html">
+            <span class="course-icon">🇺🇸</span>
+            <span class="course-text">
+              <strong>American English File</strong>
+              <small>Enfoque americano con práctica guiada y material estructurado.</small>
+            </span>
+            <span class="arrow">›</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="closing">
+        <span>✅</span>
+        <div>
+          <strong>Hello English!</strong> está pensado como una escuela digital organizada:
+          cursos claros, audio constante y materiales útiles para aprender inglés sin perderse entre contenidos sueltos.
+        </div>
+      </div>
+    </section>
+
   </main>
+
 </body>
 </html>
 
