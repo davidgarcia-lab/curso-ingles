@@ -280,6 +280,53 @@ body{
 }
 
 
+
+
+
+
+/* Medical English Pro */
+#medical-header{
+  background: linear-gradient(
+    90deg,
+    rgb(7, 59, 102),
+    rgb(11, 95, 145),
+    rgb(16, 166, 166)
+  );
+
+  color: #fff;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#medical-header h1{
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+#medical-header nav a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .18);
+  transition: .2s ease;
+  white-space: nowrap;
+}
+
+#medical-header nav a:hover{
+  background: rgba(255, 255, 255, .30);
+  transform: translateY(-1px);
+}
+
+
+
 /* English Explorer*/
 #explorer-header{
   background:  rgb(8, 32, 72);
@@ -484,6 +531,21 @@ details[open] summary::after{
   font-weight: 600;
   
 }
+
+
+#sufijo_24{
+  color: #075985;
+  font-weight: 700;
+}
+
+#sufijo_25{
+  color: #0F8C82;
+  font-weight: 700;
+}
+
+
+
+
 
 
 /* Móvil */
