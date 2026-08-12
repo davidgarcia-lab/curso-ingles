@@ -556,11 +556,30 @@ details[open] summary::after{
 }
 
 #sufijo_28{
-  color: #24513A;;
+  color: #24513A;
   font-weight: 700;
 }
 
 #sufijo_29{
+  color: #24513A;
+  font-weight: 700;
+}
+
+
+
+/* ENGLISH FOR EVERYONE*/
+
+#sufijo_30{
+  color: #1B4965;
+  font-weight: 700;
+}
+
+#sufijo_31{
+  color: #B03A2E;
+  font-weight: 700;
+}
+
+#sufijo_32{
   color: #24513A;
   font-weight: 700;
 }
