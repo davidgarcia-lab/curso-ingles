@@ -586,6 +586,24 @@ details[open] summary::after{
 
 
 
+/* ENGLISH grammarE*/
+
+#sufijo_33{
+  color: #C0392B;
+  font-weight: 700;
+}
+
+#sufijo_34{
+  color: #2286d3;
+  font-weight: 700;
+}
+
+#sufijo_35{
+  color: #008080;
+  font-weight: 700;
+}
+
+
 
 /* Móvil */
 @media (max-width: 600px){
