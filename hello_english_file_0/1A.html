@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
     <link rel="stylesheet" href="../css/estilos1.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    
     
 
 </head>
@@ -371,6 +373,7 @@
 
 <script src="../js/script3.js"></script>
 <script src="../js/script4.js"></script>
+<script src="../js/script10.js"></script>
 
 
 
@@ -382,10 +385,824 @@
 </div>
 
 
+
+</div>
+
+<!--
+  COLOCACIÓN:
+  Pega este bloque después del cierre de #segmento y antes del cierre
+  de .contenedor. No lo coloques dentro de #segmento.
+
+  En <head> agrega:
+  <link rel="stylesheet" href="../css/estilos2.css">
+
+  Antes de </body> agrega:
+  <script src="../js/script10.js"></script>
+-->
+
+<!-- COLUMNA DERECHA -->
+<aside class="he-class-sidebar" aria-label="Información complementaria de la clase">
+
+  <!-- IDEAS CLAVE -->
+  <section class="he-sidebar-card">
+    <span class="he-card-label">Ideas clave</span>
+    <h3>Lo que aprenderás</h3>
+
+    <ul class="key-list">
+      <!-- DUPLICA ESTE ELEMENTO PARA CADA IDEA:
+      <li>
+        <span class="he-key-check" aria-hidden="true">✓</span>
+        <span>COLOCA AQUÍ UNA IDEA CLAVE</span>
+      </li>
+      -->
+
+
+ 
+  <li>Saludar y despedirse en situaciones sencillas.</li>
+  <li>Preguntar y decir el nombre de una persona.</li>
+  <li>Usar el verbo <strong>be</strong> con <strong>I</strong> y <strong>you</strong>.</li>
+  <li>Formar afirmaciones, negaciones y preguntas básicas.</li>
+
+
+
+    </ul>
+  </section>
+
+  <!-- SIGUIENTE LECCIÓN -->
+  <section class="he-sidebar-card he-next-card">
+    <span class="he-card-label">Siguiente lección</span>
+    <h3>Where are you from?</h3>
+    <p>Objetivo aprender países en inglés, preguntar y responder de dónde es una persona</p>
+
+    <!-- REEMPLAZA # POR EL ENLACE CORRESPONDIENTE -->
+    <a class="he-sidebar-button he-next-button" href="../hello_english_file_0/1B.html">
+      Ver siguiente lección
+    </a>
+  </section>
+
+  <!-- COMPARTIR -->
+  <section class="he-sidebar-card he-share-card">
+    <span class="he-card-label">Compartir</span>
+    <h3>Recomienda esta lección</h3>
+    <p>Comparte esta página con una persona que también quiera aprender inglés.</p>
+
+    <a class="he-sidebar-button he-share-button" href="#">
+      Compartir por WhatsApp
+    </a>
+  </section>
+</aside>
+
+<!-- PRÁCTICA: MISMO ANCHO QUE #segmento -->
+<section class="he-practice-block" aria-labelledby="he-practice-title">
+  <header class="he-practice-header">
+    <span class="he-practice-label">Zona práctica</span>
+    <h2 id="he-practice-title">Practica lo aprendido</h2>
+    <p>Refuerza lo aprendido con una actividad práctica.</p>
+  </header>
+
+  <!-- =========================================================
+     CSS: PUEDES DEJARLO AQUÍ O MOVERLO A TU ARCHIVO DE ESTILOS
+========================================================== -->
+<style>
+    /* =========================================================
+       BLOQUE DE IDEAS CLAVE Y PRÁCTICA — HELLO ENGLISH
+       Los estilos están limitados a .hello-practice para evitar
+       cambios en otros elementos de tu página.
+    ========================================================== */
+    .hello-key-list {
+      display: grid;
+      gap: 9px;
+      margin: 14px 0 0;
+      padding: 0;
+      color: #505a66;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      list-style: none;
+    }
+
+    .hello-key-list li {
+      position: relative;
+      padding-left: 17px;
+    }
+
+    .hello-key-list li::before {
+      position: absolute;
+      top: 0.56em;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ef7b1a;
+      content: "";
+    }
+
+    .hello-key-list strong {
+      color: #252a31;
+    }
+
+    .hello-practice {
+      --hp-orange: #f47a22;
+      --hp-orange-dark: #d85e0c;
+      --hp-orange-soft: #fff4eb;
+      --hp-ink: #20252b;
+      --hp-muted: #65707c;
+      --hp-line: #e8e8e8;
+      --hp-surface: #ffffff;
+      --hp-bg: #f7f7f5;
+      --hp-green: #178451;
+      --hp-green-soft: #eaf8f1;
+      --hp-red: #c64040;
+      --hp-red-soft: #fff0f0;
+      width: 100%;
+      color: var(--hp-ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      box-sizing: border-box;
+    }
+
+    .hello-practice *,
+    .hello-practice *::before,
+    .hello-practice *::after {
+      box-sizing: border-box;
+    }
+
+    .hello-practice__inner {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hello-practice__section {
+      margin-bottom: 28px;
+      padding: clamp(20px, 4vw, 34px);
+      border: 1px solid var(--hp-line);
+      border-radius: 18px;
+      background: var(--hp-surface);
+      box-shadow: 0 8px 28px rgba(28, 32, 36, 0.05);
+    }
+
+    .hello-practice__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 8px;
+      color: var(--hp-orange-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .hello-practice__eyebrow::before {
+      width: 22px;
+      height: 3px;
+      border-radius: 20px;
+      background: var(--hp-orange);
+      content: "";
+    }
+
+    .hello-practice h2,
+    .hello-practice h3,
+    .hello-practice p {
+      margin-top: 0;
+    }
+
+    .hello-practice h2 {
+      margin-bottom: 8px;
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .hello-practice h3 {
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    .hello-practice__intro {
+      max-width: 760px;
+      margin-bottom: 24px;
+      color: var(--hp-muted);
+    }
+
+    .hello-practice__activity {
+      margin-top: 18px;
+      padding: clamp(18px, 3vw, 26px);
+      border: 1px solid var(--hp-line);
+      border-radius: 16px;
+      background: var(--hp-surface);
+    }
+
+    .hello-practice__activity-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .hello-practice__activity-number {
+      flex: 0 0 auto;
+      display: grid;
+      width: 32px;
+      height: 32px;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--hp-orange-soft);
+      color: var(--hp-orange-dark);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .hello-practice__activity-header p {
+      margin-bottom: 0;
+      color: var(--hp-muted);
+      font-size: 0.94rem;
+    }
+
+    .hello-practice__question {
+      padding: 18px 0;
+      border-top: 1px solid var(--hp-line);
+    }
+
+    .hello-practice__question:first-of-type {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .hello-practice__prompt {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .hello-practice__options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .hello-practice__option {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 10px 12px;
+      border: 1px solid var(--hp-line);
+      border-radius: 11px;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+    }
+
+    .hello-practice__option:hover {
+      border-color: #f3b486;
+      background: var(--hp-orange-soft);
+      transform: translateY(-1px);
+    }
+
+    .hello-practice__option input {
+      width: 18px;
+      height: 18px;
+      margin: 0 10px 0 0;
+      accent-color: var(--hp-orange);
+    }
+
+    .hello-practice__option.is-correct {
+      border-color: var(--hp-green);
+      background: var(--hp-green-soft);
+    }
+
+    .hello-practice__option.is-wrong {
+      border-color: var(--hp-red);
+      background: var(--hp-red-soft);
+    }
+
+    .hello-practice__sentence {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .hello-practice__input,
+    .hello-practice__select {
+      min-width: 130px;
+      height: 43px;
+      padding: 8px 11px;
+      border: 1px solid #cfd3d7;
+      border-radius: 9px;
+      outline: none;
+      background: #fff;
+      color: var(--hp-ink);
+      font: inherit;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .hello-practice__input:focus,
+    .hello-practice__select:focus {
+      border-color: var(--hp-orange);
+      box-shadow: 0 0 0 3px var(--hp-orange-soft);
+    }
+
+    .hello-practice__input.is-correct,
+    .hello-practice__select.is-correct {
+      border-color: var(--hp-green);
+      background: var(--hp-green-soft);
+    }
+
+    .hello-practice__input.is-wrong,
+    .hello-practice__select.is-wrong {
+      border-color: var(--hp-red);
+      background: var(--hp-red-soft);
+    }
+
+    .hello-practice__feedback {
+      display: none;
+      margin: 9px 0 0;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .hello-practice__feedback.is-visible {
+      display: block;
+    }
+
+    .hello-practice__feedback.is-correct {
+      color: var(--hp-green);
+    }
+
+    .hello-practice__feedback.is-wrong {
+      color: var(--hp-red);
+    }
+
+    .hello-practice__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .hello-practice__button {
+      min-height: 46px;
+      padding: 10px 19px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+
+    .hello-practice__button:hover {
+      transform: translateY(-1px);
+    }
+
+    .hello-practice__button--primary {
+      background: var(--hp-orange);
+      color: #fff;
+    }
+
+    .hello-practice__button--primary:hover {
+      background: var(--hp-orange-dark);
+    }
+
+    .hello-practice__button--secondary {
+      border-color: var(--hp-line);
+      background: #fff;
+      color: var(--hp-ink);
+    }
+
+    .hello-practice__result {
+      display: none;
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 13px;
+      background: var(--hp-bg);
+    }
+
+    .hello-practice__result.is-visible {
+      display: block;
+    }
+
+    .hello-practice__result-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .hello-practice__score {
+      color: var(--hp-orange-dark);
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    .hello-practice__progress {
+      overflow: hidden;
+      height: 8px;
+      border-radius: 20px;
+      background: #e5e5e2;
+    }
+
+    .hello-practice__progress-bar {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--hp-orange);
+      transition: width 0.35s ease;
+    }
+
+    .hello-practice__result-message {
+      margin: 10px 0 0;
+      color: var(--hp-muted);
+    }
+
+    @media (max-width: 700px) {
+      .hello-practice__options {
+        grid-template-columns: 1fr;
+      }
+
+      .hello-practice__section {
+        border-radius: 14px;
+      }
+
+      .hello-practice__result-top {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hello-practice *,
+      .hello-practice *::before,
+      .hello-practice *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+
+
+<!-- =========================================================
+     2. PRÁCTICA
+     PEGA ESTE BLOQUE EN LA SECCIÓN “PRACTICA LO APRENDIDO”
+========================================================== -->
+  <section class="hello-practice" id="helloPractice">
+    <div class="hello-practice__inner">
+      <!-- EJERCICIOS INTERACTIVOS -->
+      
+        
+        <p class="hello-practice__intro">Marca o completa cada respuesta. Al terminar, selecciona <strong>Comprobar respuestas</strong>.</p>
+
+        <form id="helloPracticeForm" novalidate>
+          <!-- ACTIVIDAD 1: MARCAR -->
+          <div class="hello-practice__activity">
+            <div class="hello-practice__activity-header">
+              <span class="hello-practice__activity-number">1</span>
+              <div>
+                <h3>Marca la respuesta correcta</h3>
+                <p>Selecciona una opción en cada pregunta.</p>
+              </div>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Good morning">
+              <span class="hello-practice__prompt">1. ¿Cómo dices “Buenos días” en inglés?</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q1" value="Good morning">Good morning</label>
+                <label class="hello-practice__option"><input type="radio" name="q1" value="Goodbye">Goodbye</label>
+                <label class="hello-practice__option"><input type="radio" name="q1" value="Good night">Good night</label>
+                <label class="hello-practice__option"><input type="radio" name="q1" value="See you soon">See you soon</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Nice to meet you, too">
+              <span class="hello-practice__prompt">2. ¿Cuál es la respuesta adecuada a “Nice to meet you”?</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q2" value="What's your name?">What’s your name?</label>
+                <label class="hello-practice__option"><input type="radio" name="q2" value="Nice to meet you, too">Nice to meet you, too</label>
+                <label class="hello-practice__option"><input type="radio" name="q2" value="I'm not">I’m not</label>
+                <label class="hello-practice__option"><input type="radio" name="q2" value="Good morning">Good morning</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="What's your name?">
+              <span class="hello-practice__prompt">3. ¿Qué pregunta sirve para conocer el nombre de una persona?</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q3" value="Are you in room two?">Are you in room two?</label>
+                <label class="hello-practice__option"><input type="radio" name="q3" value="What's your name?">What’s your name?</label>
+                <label class="hello-practice__option"><input type="radio" name="q3" value="See you Monday">See you Monday</label>
+                <label class="hello-practice__option"><input type="radio" name="q3" value="You are number five">You are number five</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="No, I'm not">
+              <span class="hello-practice__prompt">4. Responde negativamente: “Are you Henry?”</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q4" value="Yes, you are">Yes, you are</label>
+                <label class="hello-practice__option"><input type="radio" name="q4" value="No, I'm not">No, I’m not</label>
+                <label class="hello-practice__option"><input type="radio" name="q4" value="I'm Henry">I’m Henry</label>
+                <label class="hello-practice__option"><input type="radio" name="q4" value="No, you aren't">No, you aren’t</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <!-- ACTIVIDAD 2: COMPLETAR -->
+          <div class="hello-practice__activity">
+            <div class="hello-practice__activity-header">
+              <span class="hello-practice__activity-number">2</span>
+              <div>
+                <h3>Completa las oraciones</h3>
+                <p>Escribe la palabra que falta en inglés.</p>
+              </div>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="am|'m">
+              <label class="hello-practice__prompt" for="q5">5. I ___ Lisa Silva.</label>
+              <div class="hello-practice__sentence">I <input class="hello-practice__input" id="q5" name="q5" type="text" autocomplete="off" aria-label="Palabra que falta"> Lisa Silva.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="are|'re">
+              <label class="hello-practice__prompt" for="q6">6. You ___ in my class.</label>
+              <div class="hello-practice__sentence">You <input class="hello-practice__input" id="q6" name="q6" type="text" autocomplete="off" aria-label="Palabra que falta"> in my class.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="not">
+              <label class="hello-practice__prompt" for="q7">7. I’m ___ in room two.</label>
+              <div class="hello-practice__sentence">I’m <input class="hello-practice__input" id="q7" name="q7" type="text" autocomplete="off" aria-label="Palabra que falta"> in room two.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Are">
+              <label class="hello-practice__prompt" for="q8">8. ___ you Henry?</label>
+              <div class="hello-practice__sentence"><input class="hello-practice__input" id="q8" name="q8" type="text" autocomplete="off" aria-label="Palabra que falta"> you Henry?</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="not">
+              <label class="hello-practice__prompt" for="q9">9. No, I’m ___.</label>
+              <div class="hello-practice__sentence">No, I’m <input class="hello-practice__input" id="q9" name="q9" type="text" autocomplete="off" aria-label="Palabra que falta">.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Tuesday">
+              <label class="hello-practice__prompt" for="q10">10. Monday, ___, Wednesday.</label>
+              <div class="hello-practice__sentence">Monday, <input class="hello-practice__input" id="q10" name="q10" type="text" autocomplete="off" aria-label="Día que falta">, Wednesday.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="three|3">
+              <label class="hello-practice__prompt" for="q11">11. One, two, ___, four.</label>
+              <div class="hello-practice__sentence">One, two, <input class="hello-practice__input" id="q11" name="q11" type="text" autocomplete="off" aria-label="Número que falta">, four.</div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <!-- ACTIVIDAD 3: ELEGIR -->
+          <div class="hello-practice__activity">
+            <div class="hello-practice__activity-header">
+              <span class="hello-practice__activity-number">3</span>
+              <div>
+                <h3>Elige la palabra correcta</h3>
+                <p>Completa cada expresión usando la lista desplegable.</p>
+              </div>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="five">
+              <label class="hello-practice__prompt" for="q12">12. Número 5</label>
+              <select class="hello-practice__select" id="q12" name="q12">
+                <option value="">Selecciona</option>
+                <option value="four">four</option>
+                <option value="five">five</option>
+                <option value="nine">nine</option>
+              </select>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="three">
+              <label class="hello-practice__prompt" for="q13">13. Número 3</label>
+              <select class="hello-practice__select" id="q13" name="q13">
+                <option value="">Selecciona</option>
+                <option value="ten">ten</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+              </select>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Monday">
+              <label class="hello-practice__prompt" for="q14">14. “Lunes” en inglés</label>
+              <select class="hello-practice__select" id="q14" name="q14">
+                <option value="">Selecciona</option>
+                <option value="Monday">Monday</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Friday">Friday</option>
+              </select>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="Sunday">
+              <label class="hello-practice__prompt" for="q15">15. “Domingo” en inglés</label>
+              <select class="hello-practice__select" id="q15" name="q15">
+                <option value="">Selecciona</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Sunday">Sunday</option>
+              </select>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <!-- ACTIVIDAD 4: COMPRENSIÓN -->
+          <div class="hello-practice__activity">
+            <div class="hello-practice__activity-header">
+              <span class="hello-practice__activity-number">4</span>
+              <div>
+                <h3>Comprende la historia</h3>
+                <p>Marca <strong>True</strong> (verdadero) o <strong>False</strong> (falso).</p>
+              </div>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="True">
+              <span class="hello-practice__prompt">16. The story happens on Monday morning.</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q16" value="True">True</label>
+                <label class="hello-practice__option"><input type="radio" name="q16" value="False">False</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="False">
+              <span class="hello-practice__prompt">17. Lisa is in room two.</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q17" value="True">True</label>
+                <label class="hello-practice__option"><input type="radio" name="q17" value="False">False</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="True">
+              <span class="hello-practice__prompt">18. Henry Green is in Lisa’s class.</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q18" value="True">True</label>
+                <label class="hello-practice__option"><input type="radio" name="q18" value="False">False</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+
+            <div class="hello-practice__question" data-question data-answer="False">
+              <span class="hello-practice__prompt">19. The students count from one to five.</span>
+              <div class="hello-practice__options">
+                <label class="hello-practice__option"><input type="radio" name="q19" value="True">True</label>
+                <label class="hello-practice__option"><input type="radio" name="q19" value="False">False</label>
+              </div>
+              <p class="hello-practice__feedback" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="hello-practice__actions">
+            <button class="hello-practice__button hello-practice__button--primary" type="submit">Comprobar respuestas</button>
+            <button class="hello-practice__button hello-practice__button--secondary" id="helloPracticeReset" type="button">Intentar de nuevo</button>
+          </div>
+
+          <div class="hello-practice__result" id="helloPracticeResult" role="status" aria-live="polite" tabindex="-1">
+            <div class="hello-practice__result-top">
+              <strong>Resultado de la práctica</strong>
+              <span class="hello-practice__score" id="helloPracticeScore">0/19</span>
+            </div>
+            <div class="hello-practice__progress" aria-hidden="true">
+              <div class="hello-practice__progress-bar" id="helloPracticeProgress"></div>
+            </div>
+            <p class="hello-practice__result-message" id="helloPracticeMessage"></p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+  <!-- FIN DEL BLOQUE -->
+
+  <script>
+    /* =========================================================
+       CORRECCIÓN DE LOS EJERCICIOS
+       No requiere librerías externas.
+    ========================================================== */
+    (() => {
+      const root = document.getElementById('helloPractice');
+      if (!root) return;
+
+      const form = root.querySelector('#helloPracticeForm');
+      const resetButton = root.querySelector('#helloPracticeReset');
+      const result = root.querySelector('#helloPracticeResult');
+      const scoreText = root.querySelector('#helloPracticeScore');
+      const message = root.querySelector('#helloPracticeMessage');
+      const progress = root.querySelector('#helloPracticeProgress');
+      const questions = [...root.querySelectorAll('[data-question]')];
+
+      const normalize = (value) => value
+        .trim()
+        .toLowerCase()
+        .replace(/[’‘]/g, "'")
+        .replace(/\s+/g, ' ');
+
+      const clearQuestionState = (question) => {
+        question.querySelectorAll('.is-correct, .is-wrong').forEach((element) => {
+          element.classList.remove('is-correct', 'is-wrong');
+        });
+        const feedback = question.querySelector('.hello-practice__feedback');
+        feedback.className = 'hello-practice__feedback';
+        feedback.textContent = '';
+      };
+
+      const getControl = (question) => {
+        const checkedRadio = question.querySelector('input[type="radio"]:checked');
+        return checkedRadio || question.querySelector('.hello-practice__input, .hello-practice__select');
+      };
+
+      const displayAnswer = (question) => question.dataset.answer.split('|')[0];
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        let correctAnswers = 0;
+
+        questions.forEach((question) => {
+          clearQuestionState(question);
+          const control = getControl(question);
+          const acceptedAnswers = question.dataset.answer.split('|').map(normalize);
+          const userAnswer = control ? normalize(control.value) : '';
+          const isCorrect = userAnswer !== '' && acceptedAnswers.includes(userAnswer);
+          const feedback = question.querySelector('.hello-practice__feedback');
+
+          if (isCorrect) {
+            correctAnswers += 1;
+            if (control.type === 'radio') control.closest('.hello-practice__option').classList.add('is-correct');
+            else control.classList.add('is-correct');
+            feedback.textContent = '¡Correcto!';
+            feedback.classList.add('is-visible', 'is-correct');
+          } else {
+            if (control) {
+              if (control.type === 'radio') control.closest('.hello-practice__option').classList.add('is-wrong');
+              else control.classList.add('is-wrong');
+            }
+            feedback.textContent = userAnswer
+              ? `Revisa. Respuesta correcta: ${displayAnswer(question)}.`
+              : `Falta responder. Respuesta correcta: ${displayAnswer(question)}.`;
+            feedback.classList.add('is-visible', 'is-wrong');
+          }
+        });
+
+        const total = questions.length;
+        const percentage = Math.round((correctAnswers / total) * 100);
+        scoreText.textContent = `${correctAnswers}/${total}`;
+        progress.style.width = `${percentage}%`;
+
+        if (percentage === 100) {
+          message.textContent = '¡Excelente! Dominas los contenidos principales de esta clase.';
+        } else if (percentage >= 75) {
+          message.textContent = '¡Muy bien! Revisa las respuestas señaladas y vuelve a intentarlo.';
+        } else if (percentage >= 50) {
+          message.textContent = 'Buen avance. Repasa las ideas clave antes de un nuevo intento.';
+        } else {
+          message.textContent = 'Sigue practicando. Lee nuevamente los ejemplos y vuelve a responder.';
+        }
+
+        result.classList.add('is-visible');
+        result.focus({ preventScroll: true });
+        result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+
+      form.addEventListener('input', (event) => {
+        const question = event.target.closest('[data-question]');
+        if (question) clearQuestionState(question);
+      });
+
+      resetButton.addEventListener('click', () => {
+        form.reset();
+        questions.forEach(clearQuestionState);
+        result.classList.remove('is-visible');
+        scoreText.textContent = `0/${questions.length}`;
+        progress.style.width = '0%';
+        message.textContent = '';
+        root.querySelector('input, select')?.focus();
+        root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
+  <div class="he-practice-content">
+  </div>
+</section>
+
 </div>
 
 
-</div>
 
 
 </body>

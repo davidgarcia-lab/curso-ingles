@@ -1,0 +1,247 @@
+/* ================================================================
+   BLOQUES COMPLEMENTARIOS DE LA CLASE
+   Utiliza exclusivamente la paleta definida en estilos1.css.
+   No modifica los anchos de .contenedor, #segmento o .lesson-reader.
+   ================================================================ */
+
+.contenedor:has(> .he-class-sidebar) {
+  position: relative;
+}
+
+/* COLUMNA DERECHA */
+.he-class-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: grid;
+  gap: 16px;
+  width: 264px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding-right: 4px;
+  visibility: hidden;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand-2) transparent;
+}
+
+.he-class-sidebar.he-is-ready {
+  visibility: visible;
+}
+
+.he-class-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.he-class-sidebar::-webkit-scrollbar-thumb {
+  background: var(--brand-2);
+  border-radius: 999px;
+}
+
+.he-sidebar-card {
+  padding: 20px 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.he-card-label,
+.he-practice-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--brand-2);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.he-sidebar-card h3 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+/* LISTA GENÉRICA PARA IDEAS CLAVE DE CUALQUIER CURSO */
+.key-list,
+.he-key-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.key-list > li,
+.he-key-list > li {
+  position: relative !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 0 0 26px !important;
+  color: var(--muted) !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+.key-list > li::before,
+.he-key-list > li::before {
+  content: "✓";
+  position: absolute;
+  top: .18em;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  color: var(--card);
+  background: var(--brand-2);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.key-list > li > :is(strong, b, span, em, i, a, p),
+.he-key-list > li > :is(strong, b, span, em, i, a, p) {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.key-list strong,
+.key-list b,
+.he-key-list strong,
+.he-key-list b {
+  color: var(--text) !important;
+  font-weight: 700 !important;
+}
+
+/* Compatibilidad con la versión anterior del HTML. */
+.he-key-check {
+  display: none;
+}
+
+.he-next-card {
+  color: var(--card);
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+  border: 0;
+}
+
+.he-next-card .he-card-label,
+.he-next-card h3,
+.he-next-card p {
+  color: var(--card);
+}
+
+.he-next-card p,
+.he-share-card p {
+  margin: 0 0 16px;
+}
+
+.he-next-card p {
+  opacity: .88;
+}
+
+.he-share-card p {
+  color: var(--muted);
+}
+
+.he-sidebar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.he-sidebar-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.he-next-button {
+  color: var(--brand-1);
+  background: var(--card);
+}
+
+.he-share-button {
+  color: var(--card);
+  background: var(--brand-2);
+}
+
+/* PRÁCTICA: BLOQUE ÚNICO, DEBAJO DE #segmento */
+.he-practice-block {
+  margin-top: 28px;
+  padding: 32px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--brand-2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.he-practice-header {
+  margin-bottom: 22px;
+}
+
+.he-practice-header h2 {
+  margin: 0 0 8px;
+  color: var(--brand-1);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.1;
+}
+
+.he-practice-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.he-practice-content {
+  min-height: 120px;
+  padding: 24px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 2px);
+  line-height: 1.65;
+}
+
+/* Cuando no existe espacio lateral, las tarjetas pasan debajo. */
+.he-class-sidebar.he-is-inline {
+  position: static;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: auto;
+  max-height: none;
+  overflow: visible;
+  margin-top: 28px;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  .he-class-sidebar.he-is-inline {
+    grid-template-columns: 1fr;
+  }
+
+  .he-practice-block {
+    padding: 24px 18px;
+  }
+
+  .he-practice-content {
+    padding: 18px;
+  }
+}
