@@ -336,7 +336,45 @@
 
 
 </div>
+<!-- Cargar la librería externa html2pdf -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
+<script>
+// Función para descargar solo el contenedor #texto
+function descargarBloquePDF() {
+    const elemento = document.getElementById('texto');
+    
+    // Ocultar el botón dentro del bloque durante la captura
+    const btnTraduccion = document.getElementById('toggleBtn');
+    if (btnTraduccion) btnTraduccion.style.display = 'none';
+
+    const opciones = {
+        margin:       12,
+        filename:     'English_Vocabulary_In_A_Hotel.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opciones).from(elemento).save().then(() => {
+        if (btnTraduccion) btnTraduccion.style.display = 'block';
+    });
+}
+
+// Crear automáticamente un botón de descarga en la pantalla
+window.addEventListener('DOMContentLoaded', () => {
+    const btnPDF = document.createElement('button');
+    btnPDF.innerText = 'Descargar lección en PDF';
+    btnPDF.style.cssText = 'padding:10px 15px; background:#1e3c72; color:white; border:none; border-radius:5px; cursor:pointer; margin-bottom:15px; font-weight:bold;';
+    
+    // Colocar el botón justo arriba del bloque #texto
+    const textoDiv = document.getElementById('texto');
+    if (textoDiv) {
+        textoDiv.parentNode.insertBefore(btnPDF, textoDiv);
+        btnPDF.onclick = descargarBloquePDF;
+    }
+});
+</script>
 
 </body>
 
