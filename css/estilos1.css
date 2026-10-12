@@ -608,7 +608,7 @@ details[open] summary::after{
 /* Móvil */
 @media (max-width: 600px){
   .lesson-reader{
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 }
 
