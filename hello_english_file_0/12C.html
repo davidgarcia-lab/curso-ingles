@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingles</title>
     <link rel="stylesheet" href="../css/estilos1.css">
-    <link rel="stylesheet" href="../css/practica.css">
+    <link rel="stylesheet" href="../css/practica-2.css">
 <script src="../js/practica2.js" defer></script>
     
 
@@ -412,36 +412,55 @@
 </div>
 
 
-<section class="he-practice" data-practice lang="es" aria-labelledby="he-practice-title">
+
+<div class="he-learning-intro" aria-labelledby="he-learning-title">
+  <p class="he-learning-intro__eyebrow">PRÁCTICA DE LA CLASE</p>
+  <h2 id="he-learning-title">Practica lo aprendido<span>.</span></h2>
+  <p class="he-learning-intro__lead">Cuatro actividades, una secuencia de aprendizaje. Comienza reconociendo vocabulario, continúa aplicando la gramática, escribe tus propias frases y termina comprobando tu comprensión auditiva.</p>
+  <p class="he-learning-intro__note">Cada etapa tiene su propio avance, evaluación y resultado. Puedes completarlas a tu ritmo.</p>
+  <nav class="he-learning-intro__steps" aria-label="Navegación entre actividades">
+    <span><a href="#practica-vocabulario"><b>01</b> Vocabulario</a></span>
+    <span><a href="#practica-gramatica"><b>02</b> Gramática</a></span>
+    <span><a href="#practica-writing"><b>03</b> Writing</a></span>
+    <span><a href="#practica-listening"><b>04</b> Listening</a></span>
+  </nav>
+</div>
+
+<section id="practica-vocabulario" class="he-practice he-practice--stage" data-practice lang="es" aria-labelledby="he-practice-title">
 <header class="he-practice__header">
 <div>
-<p class="he-practice__eyebrow">HELLO ENGLISH! / ZONA PRÁCTICA</p>
-<h2 id="he-practice-title">Ahora te toca a ti Vocabulario<span>.</span></h2>
-<p class="he-practice__subtitle">VOCABULARIO</p>
-<p class="he-practice__intro">Pon a prueba lo aprendido.</p>
+<p class="he-practice__eyebrow">ETAPA 01 DE 04 · VOCABULARIO</p>
+<h2 id="he-practice-title">Evalúa tu vocabulario<span>.</span></h2>
+<p class="he-practice__subtitle">Reconocimiento y comprensión</p>
+<p class="he-practice__intro">Identifica el significado preciso de las palabras y expresiones aprendidas.</p>
 </div>
 <div class="he-practice__count"><strong>30</strong><span>preguntas<br>para practicar</span></div>
 </header>
+
 <div class="he-practice__tracker">
 <span>Tu avance</span>
 <progress data-completion max="30" value="0" aria-label="Preguntas respondidas"></progress>
 <span data-count>0/30 · Faltan 30</span>
 </div>
+
 <form class="he-practice__form" novalidate>
 <section class="he-practice__group" aria-labelledby="he-vocabulary-title">
 <div class="he-practice__group-title">
 <span class="he-practice__step">01</span>
-<div><h3 id="he-vocabulary-title">VOCABULARIO</h3><p>Selecciona el significado correcto de cada palabra o expresión.</p></div>
+<div>
+<h3 id="he-vocabulary-title">EJERCICIOS DE VOCABULARIO</h3>
+<p>Selecciona el significado correcto de cada palabra o expresión.</p>
+</div>
 <span class="he-practice__tag">30 preguntas</span>
 </div>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Fiesta de cumpleaños" data-explanation="'Birthday party' significa específicamente una fiesta de cumpleaños. No debe confundirse con 'birthday card' (tarjeta de cumpleaños).">
+<fieldset class="he-practice__question" data-answer="b" data-solution="Fiesta de cumpleaños" data-explanation="Birthday party se traduce como fiesta de cumpleaños.">
 <legend><span class="he-practice__number">01</span>Birthday party</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="a" aria-describedby="he-feedback-1">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Tarjeta de cumpleaños</span>
+<span>Tarjeta de felicitación</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="b" aria-describedby="he-feedback-1">
@@ -451,78 +470,78 @@
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="c" aria-describedby="he-feedback-1">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Regalo de cumpleaños</span>
+<span>Regalo de aniversario</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="d" aria-describedby="he-feedback-1">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Pastel de cumpleaños</span>
+<span>Reunión de trabajo</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-1" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Parrillada" data-explanation="'Barbecue' se refiere a una parrillada o asado. Evite confundirlo con otros eventos gastronómicos como 'dinner party' (cena con invitados).">
+<fieldset class="he-practice__question" data-answer="c" data-solution="Parrillada" data-explanation="Barbecue se refiere a una parrillada o asado.">
 <legend><span class="he-practice__number">02</span>Barbecue</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q2" value="a" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Parrillada</span>
+<span>Cena formal</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q2" value="b" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Cena con invitados</span>
+<span>Desayuno ligero</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q2" value="c" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Comida rápida</span>
+<span>Parrillada</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q2" value="d" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Desayuno campestre</span>
+<span>Merienda escolar</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-2" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Papas fritas (de bolsa / hojuelas)" data-explanation="'Potato chips' hace referencia a las papas fritas de bolsa u hojuelas crujientes, distinguiéndose de las papas a la francesa o frituras calientes.">
+<fieldset class="he-practice__question" data-answer="a" data-solution="Papas fritas" data-explanation="Potato chips son papas fritas de bolsa o crujientes.">
 <legend><span class="he-practice__number">03</span>Potato chips</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="a" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Papas cocidas</span>
+<span>Papas fritas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="b" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Pure de papas</span>
+<span>Puré de papas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="c" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Papas fritas (de bolsa / hojuelas)</span>
+<span>Papas horneadas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="d" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Papas al horno</span>
+<span>Sopa de papa</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-3" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Cena con invitados" data-explanation="'Dinner party' hace referencia a una reunión formal o social donde se sirve una cena a invitados, no a una fiesta bailable ni a un almuerzo.">
+<fieldset class="he-practice__question" data-answer="d" data-solution="Cena con invitados" data-explanation="Dinner party significa una cena con invitados en casa.">
 <legend><span class="he-practice__number">04</span>Dinner party</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="a" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Fiesta nocturna con baile</span>
+<span>Fiesta bailable</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="b" aria-describedby="he-feedback-4">
@@ -532,7 +551,7 @@
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="c" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Reunión de té</span>
+<span>Comida rápida</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="d" aria-describedby="he-feedback-4">
@@ -543,709 +562,710 @@
 <p class="he-practice__feedback" id="he-feedback-4" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Algo para beber" data-explanation="'Something to drink' significa 'algo para beber'. No debe confundirse con 'something to eat' (algo para comer).">
+<fieldset class="he-practice__question" data-answer="b" data-solution="Algo para beber" data-explanation="Something to drink significa algo para beber.">
 <legend><span class="he-practice__number">05</span>Something to drink</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="a" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Algo para beber</span>
+<span>Algo para comer</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="b" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Algo para comer</span>
+<span>Algo para beber</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="c" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Alguna bebida alcohólica</span>
+<span>Un bocadillo ligero</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="d" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Nada para tomar</span>
+<span>Una servilleta</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-5" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Quehaceres de la casa" data-explanation="'Housework' se refiere a las tareas del hogar (limpieza, orden). No debe confundirse con 'homework' (tarea escolar).">
-<legend><span class="he-practice__number">06</span>Housework</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Paraguas" data-explanation="Umbrella significa paraguas o sombrilla.">
+<legend><span class="he-practice__number">06</span>Umbrella</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="a" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Tarea escolar</span>
+<span>Abrigo</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="b" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Quehaceres de la casa</span>
+<span>Sombrero</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="c" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Trabajo de oficina</span>
+<span>Paraguas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="d" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Construcción de casas</span>
+<span>Maleta</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-6" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Ir al gimnasio" data-explanation="'Go to the gym' se traduce como 'ir al gimnasio'. Debe utilizarse la preposición 'to' e incluir el artículo 'the'.">
-<legend><span class="he-practice__number">07</span>Go to the gym</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Quehaceres de la casa" data-explanation="Housework se refiere a las tareas o quehaceres domésticos.">
+<legend><span class="he-practice__number">07</span>Housework</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="a" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Salir del gimnasio</span>
+<span>Quehaceres de la casa</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="b" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Estar en el gimnasio</span>
+<span>Tarea escolar</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="c" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Ir al gimnasio</span>
+<span>Trabajo de oficina</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="d" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Hacer ejercicio en casa</span>
+<span>Construcción de casas</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-7" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Recibir un correo" data-explanation="El verbo 'get' con 'an email' expresa la acción de recibir o obtener un correo electrónico, no la de enviarlo ('send').">
-<legend><span class="he-practice__number">08</span>Get an email</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Ir al trabajo" data-explanation="Go to work significa ir al trabajo.">
+<legend><span class="he-practice__number">08</span>Go to work</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="a" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Enviar un correo</span>
+<span>Ir a la escuela</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="b" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Escribir un correo</span>
+<span>Salir a caminar</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="c" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Borrar un correo</span>
+<span>Regresar a casa</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="d" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Recibir un correo</span>
+<span>Ir al trabajo</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-8" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Levantarse en la mañana" data-explanation="'Get up in the morning' significa levantarse o salir de la cama en la mañana, a diferencia de 'wake up' que es despertar.">
-<legend><span class="he-practice__number">09</span>Get up in the morning</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="Recibir un correo" data-explanation="Get an email traduce recibir un correo electrónico.">
+<legend><span class="he-practice__number">09</span>Get an email</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="a" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Acostarse en la mañana</span>
+<span>Enviar una carta</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="b" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Levantarse en la mañana</span>
+<span>Recibir un correo</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="c" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Despertar sin levantarse</span>
+<span>Borrar un mensaje</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="d" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Bañarse en la mañana</span>
+<span>Escribir una nota</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-9" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Hacer tarea" data-explanation="'Do homework' combina el verbo 'do' con 'homework' para referirse a resolver los deberes escolares. No se usa el verbo 'make'.">
-<legend><span class="he-practice__number">10</span>Do homework</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Levantarse en la mañana" data-explanation="Get up in the morning significa levantarse por la mañana.">
+<legend><span class="he-practice__number">10</span>Get up in the morning</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="a" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Hacer tarea</span>
+<span>Acostarse temprano</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="b" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Hacer quehaceres de la casa</span>
+<span>Desayunar tarde</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="c" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Trabajar desde casa</span>
+<span>Levantarse en la mañana</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="d" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Revisar la tarea</span>
+<span>Dormirse rápido</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-10" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Llevar un paraguas" data-explanation="'Take an umbrella' utiliza el verbo 'take' en el sentido de llevar o tomar consigo un paraguas, no de comprarlo o venderlo.">
-<legend><span class="he-practice__number">11</span>Take an umbrella</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Hacer tarea" data-explanation="Do homework significa hacer las tareas escolares.">
+<legend><span class="he-practice__number">11</span>Do homework</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="a" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Comprar un paraguas</span>
+<span>Hacer tarea</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="b" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Abrir un paraguas</span>
+<span>Limpiar la casa</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="c" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Llevar un paraguas</span>
+<span>Trabajar fuera</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="d" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Olvidar un paraguas</span>
+<span>Ir al colegio</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-11" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Conocer a alguien por primera vez" data-explanation="'Meet somebody for the first time' hace referencia explícita al primer encuentro con alguien, no a volver a reunirse.">
-<legend><span class="he-practice__number">12</span>Meet somebody for the first time</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Llevar un paraguas" data-explanation="Take an umbrella expresa la acción de llevar o tomar un paraguas.">
+<legend><span class="he-practice__number">12</span>Take an umbrella</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="a" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Reunirse con alguien de nuevo</span>
+<span>Comprar un abrigo</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="b" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Conocer a alguien por primera vez</span>
+<span>Perder la sombrilla</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="c" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Despedirse de alguien</span>
+<span>Abrir la ventana</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="d" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Llamar a alguien por teléfono</span>
+<span>Llevar un paraguas</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-12" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="No la soporto" data-explanation="'I can't stand it' es una expresión idiomática que manifiesta un fuerte desagrado o intolerancia hacia algo ('no lo/la soporto').">
-<legend><span class="he-practice__number">13</span>I can't stand it</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="Conocer a alguien por primera vez" data-explanation="Meet somebody for the first time significa conocer a alguien por primera vez.">
+<legend><span class="he-practice__number">13</span>Meet somebody for the first time</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="a" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>No puedo ponerme de pie</span>
+<span>Despedirse de un viejo amigo</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="b" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>No lo entiendo bien</span>
+<span>Conocer a alguien por primera vez</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="c" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Me da lo mismo</span>
+<span>Llamar a un familiar por teléfono</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="d" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>No la soporto</span>
+<span>Discutir con un desconocido</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-13" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Él es bastante bueno" data-explanation="En este contexto de opinión, 'pretty' actúa como adverbio de grado con el significado de 'bastante' (bastante bueno), no de 'bonito'.">
-<legend><span class="he-practice__number">14</span>He's pretty good</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="No la soporto" data-explanation="I can't stand it expresa un fuerte rechazo o que no se soporta algo.">
+<legend><span class="he-practice__number">14</span>I can't stand it</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="a" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Él es bastante bueno</span>
+<span>Me encanta mucho</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="b" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Él es muy guapo</span>
+<span>No puedo entenderlo</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q14" value="c" aria-describedby="he-practice__feedback-14">
+<input type="radio" name="he-q14" value="c" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Él es perfecto</span>
+<span>No la soporto</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="d" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Él no es muy bueno</span>
+<span>Puedo de pie mantenerlo</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-14" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Ellos son terribles" data-explanation="'Awful' es un adjetivo negativo equivalente a 'terrible' o 'muy malo'. No debe confundirse con 'awesome' (increíble/fantástico).">
-<legend><span class="he-practice__number">15</span>They're awful</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Es bastante bueno" data-explanation="Pretty good se traduce como bastante bueno.">
+<legend><span class="he-practice__number">15</span>Pretty good</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="a" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Ellos son asombrosos</span>
+<span>Bastante bueno</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="b" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Ellos son agradables</span>
+<span>Muy bonito</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="c" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Ellos son terribles</span>
+<span>Poco interesante</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="d" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Ellos son famosos</span>
+<span>Extremadamente malo</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-15" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Ella se sentó al lado de una estrella de cine" data-explanation="'Sat' es el pasado del verbo 'sit' (sentarse) y 'next to' indica 'al lado de'.">
-<legend><span class="he-practice__number">16</span>She sat next to a movie star</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Terribles" data-explanation="Awful significa espantoso, pésimo o terrible.">
+<legend><span class="he-practice__number">16</span>Awful</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q16" value="a" aria-describedby="he-feedback-16">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Ella vio a una estrella de cine</span>
+<span>Genial</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q16" value="b" aria-describedby="he-feedback-16">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Ella se sentó al lado de una estrella de cine</span>
+<span>Agradable</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q16" value="c" aria-describedby="he-feedback-16">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Ella habló con una estrella de cine</span>
+<span>Aceptable</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q16" value="d" aria-describedby="he-feedback-16">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Ella buscó a una estrella de cine</span>
+<span>Terrible</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-16" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Pensé que estuvo genial" data-explanation="'Thought' es el pasado de 'think' (pensar) y 'great' expresa una valoración altamente positiva (genial).">
-<legend><span class="he-practice__number">17</span>I thought it was great</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="Estrella de cine" data-explanation="Movie star significa estrella de cine.">
+<legend><span class="he-practice__number">17</span>Movie star</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q17" value="a" aria-describedby="he-feedback-17">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Pensé que estuvo aburrido</span>
+<span>Director de cine</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q17" value="b" aria-describedby="he-feedback-17">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Creía que era difícil</span>
+<span>Estrella de cine</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q17" value="c" aria-describedby="he-feedback-17">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Escuché que estuvo genial</span>
+<span>Proyector de cine</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q17" value="d" aria-describedby="he-feedback-17">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Pensé que estuvo genial</span>
+<span>Boleto de entrada</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-17" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Ella se va a casar el próximo mes" data-explanation="La estructura 'going to get married' denota un plan futuro para contraer matrimonio ('casarse').">
-<legend><span class="he-practice__number">18</span>She's going to get married next month</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Casarse" data-explanation="Get married se traduce como casarse.">
+<legend><span class="he-practice__number">18</span>Get married</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q18" value="a" aria-describedby="he-feedback-18">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Ella se va a casar el próximo mes</span>
+<span>Comprometerse</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q18" value="b" aria-describedby="he-feedback-18">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Ella se casó el mes pasado</span>
+<span>Divorciarse</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q18" value="c" aria-describedby="he-feedback-18">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Ella quiere mudarse el próximo mes</span>
+<span>Casarse</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q18" value="d" aria-describedby="he-feedback-18">
+<input type="radio" name="he-q18" value="d" aria-describedby="he-practice__feedback">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Ella va a graduarse el próximo mes</span>
+<span>Graduarse</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-18" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Carpa / Tienda de campaña" data-explanation="En el contexto de alojamiento de viaje, 'tent' significa carpa o tienda de campaña. No equivale a 'hotel' ni 'casa'.">
+<fieldset class="he-practice__question" data-answer="a" data-solution="Carpa / Tienda de campaña" data-explanation="Tent es la carpa o tienda de campaña utilizada para acampar.">
 <legend><span class="he-practice__number">19</span>Tent</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q19" value="a" aria-describedby="he-feedback-19">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Hotel de lujo</span>
+<span>Carpa</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q19" value="b" aria-describedby="he-feedback-19">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Cabaña de madera</span>
+<span>Cabaña</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q19" value="c" aria-describedby="he-feedback-19">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Carpa / Tienda de campaña</span>
+<span>Hotel</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q19" value="d" aria-describedby="he-feedback-19">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Habitación alquilada</span>
+<span>Habitación</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-19" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Animales salvajes lo persiguieron" data-explanation="'Wild animals' son animales salvajes y 'chased' es el pasado de persiguieron. No significa atacaron gravemente ni alimentaron.">
-<legend><span class="he-practice__number">20</span>Wild animals chased him</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Animales salvajes" data-explanation="Wild animals se refiere a animales salvajes.">
+<legend><span class="he-practice__number">20</span>Wild animals</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q20" value="a" aria-describedby="he-feedback-20">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Animales salvajes lo mordieron</span>
+<span>Mascotas domésticas</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q20" value="b" aria-describedby="he-feedback-20">
+<input type="radio" name="he-q20" value="b" aria-describedby="he-practice__feedback">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Animales salvajes lo persiguieron</span>
+<span>Animales de granja</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q20" value="c" aria-describedby="he-feedback-20">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Animales domésticos lo siguieron</span>
+<span>Insectos pequeños</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q20" value="d" aria-describedby="he-feedback-20">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Él observó animales salvajes</span>
+<span>Animales salvajes</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-20" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Viaje / Travesía" data-explanation="En la lectura, 'journey' se refiere a un viaje o travesía de larga duración, no a un trabajo o libro.">
-<legend><span class="he-practice__number">21</span>Journey</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="Perseguido" data-explanation="Chased proviene del verbo chase, que significa perseguir.">
+<legend><span class="he-practice__number">21</span>Chased</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q21" value="a" aria-describedby="he-feedback-21">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Viaje / Travesía</span>
+<span>Alimentado</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q21" value="b" aria-describedby="he-feedback-21">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Diario personal</span>
+<span>Perseguido</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q21" value="c" aria-describedby="he-feedback-21">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Aventura corta</span>
+<span>Protegido</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q21" value="d" aria-describedby="he-feedback-21">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Ruta urbana</span>
+<span>Asustado</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-21" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Inolvidable" data-explanation="El adjetivo 'unforgettable' se compone del prefijo negativo 'un-' y 'forgettable', expresando que algo no se puede olvidar (inolvidable).">
-<legend><span class="he-practice__number">22</span>Unforgettable</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Gente amigable" data-explanation="Friendly people significa personas o gente amigable.">
+<legend><span class="he-practice__number">22</span>Friendly people</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q22" value="a" aria-describedby="he-feedback-22">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Olvidable</span>
+<span>Personas desconocidas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q22" value="b" aria-describedby="he-feedback-22">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Incómodo</span>
+<span>Gente peligrosa</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q22" value="c" aria-describedby="he-feedback-22">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Peligroso</span>
+<span>Gente amigable</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q22" value="d" aria-describedby="he-feedback-22">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Inolvidable</span>
+<span>Personas extranjeras</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-22" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Emocionado / Entusiasmado" data-explanation="'Excited' describe un estado emocional de entusiasmo o emoción positiva, no de nerviosismo ni cansancio.">
-<legend><span class="he-practice__number">23</span>Excited</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Famoso" data-explanation="Famous significa famoso o muy conocido.">
+<legend><span class="he-practice__number">23</span>Famous</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q23" value="a" aria-describedby="he-feedback-23">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Preocupado</span>
+<span>Famoso</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q23" value="b" aria-describedby="he-feedback-23">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Cansado</span>
+<span>Solitario</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q23" value="c" aria-describedby="he-feedback-23">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Emocionado / Entusiasmado</span>
+<span>Cansado</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q23" value="d" aria-describedby="he-feedback-23">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Asustado</span>
+<span>Anónimo</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-23" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Gente amable" data-explanation="'Friendly' es un adjetivo que significa 'amable' o 'amigable', aplicado en la lección a las personas que conoció Steven.">
-<legend><span class="he-practice__number">24</span>Friendly people</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Viaje / Travesía" data-explanation="Journey se refiere a un viaje o travesía.">
+<legend><span class="he-practice__number">24</span>Journey</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q24" value="a" aria-describedby="he-feedback-24">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Gente famosa</span>
+<span>Diario personal</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q24" value="b" aria-describedby="he-feedback-24">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Gente amable</span>
+<span>Trabajo diario</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q24" value="c" aria-describedby="he-feedback-24">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Gente extranjera</span>
+<span>Meta académica</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q24" value="d" aria-describedby="he-feedback-24">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Gente tranquila</span>
+<span>Viaje / Travesía</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-24" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="¿Te gustaría venir a mi fiesta?" data-explanation="'Would you like to...' es la fórmula estándar para hacer invitaciones corteses ('¿Te gustaría...?').">
-<legend><span class="he-practice__number">25</span>Would you like to come to my party?</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="Emocionante" data-explanation="Exciting significa emocionante o estimulante.">
+<legend><span class="he-practice__number">25</span>Exciting</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q25" value="a" aria-describedby="he-feedback-25">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>¿Te gustaría venir a mi fiesta?</span>
+<span>Aburrido</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q25" value="b" aria-describedby="he-feedback-25">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>¿Quieres organizar una fiesta conmigo?</span>
+<span>Emocionante</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q25" value="c" aria-describedby="he-feedback-25">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>¿Vas a hacer una fiesta hoy?</span>
+<span>Estresante</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q25" value="d" aria-describedby="he-feedback-25">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>¿Puedes ir a la fiesta sin mí?</span>
+<span>Exigente</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-25" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Sí, me encantaría" data-explanation="'I'd love to' es la contracción de 'I would love to', utilizada para aceptar entusiastamente una invitación.">
-<legend><span class="he-practice__number">26</span>Yes, I'd love to</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Inolvidable" data-explanation="Unforgettable significa inolvidable.">
+<legend><span class="he-practice__number">26</span>Unforgettable</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q26" value="a" aria-describedby="he-feedback-26">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Sí, lo necesito</span>
+<span>Fácil de olvidar</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q26" value="b" aria-describedby="he-feedback-26">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Sí, lo intentaré</span>
+<span>Complicado</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q26" value="c" aria-describedby="he-feedback-26">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Sí, tal vez pueda</span>
+<span>Inolvidable</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q26" value="d" aria-describedby="he-feedback-26">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Sí, me encantaría</span>
+<span>Aventurero</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-26" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="De principio a fin" data-explanation="La frase hecha 'from start to finish' significa abarcar algo totalmente, de principio a fin.">
-<legend><span class="he-practice__number">27</span>From start to finish</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Hacer invitaciones" data-explanation="Make invitations expresa la acción de realizar invitaciones.">
+<legend><span class="he-practice__number">27</span>Make invitations</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q27" value="a" aria-describedby="he-feedback-27">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>De vez en cuando</span>
+<span>Hacer invitaciones</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q27" value="b" aria-describedby="he-feedback-27">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Paso a paso</span>
+<span>Aceptar disculpas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q27" value="c" aria-describedby="he-feedback-27">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>De principio a fin</span>
+<span>Organizar cartas</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q27" value="d" aria-describedby="he-feedback-27">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Aproximadamente al final</span>
+<span>Rechazar ofertas</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-27" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Paso a paso" data-explanation="'Step by step' es una locución adverbial que denota un avance gradual o progresivo ('paso a paso').">
-<legend><span class="he-practice__number">28</span>Step by step</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="Me encantaría" data-explanation="I'd love to equivale a me encantaría.">
+<legend><span class="he-practice__number">28</span>I'd love to</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q28" value="a" aria-describedby="he-feedback-28">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Lado a lado</span>
+<span>Tal vez otro día</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q28" value="b" aria-describedby="he-feedback-28">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Paso a paso</span>
+<span>Lo siento mucho</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q28" value="c" aria-describedby="he-feedback-28">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Poco a poco</span>
+<span>No estoy seguro</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q28" value="d" aria-describedby="he-feedback-28">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>De cuando en cuando</span>
+<span>Me encantaría</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-28" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Gran trabajo" data-explanation="'Great job' es una expresión frecuente de felicitación y reconocimiento que se traduce como 'gran trabajo' o 'excelente trabajo'.">
-<legend><span class="he-practice__number">29</span>Great job</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="De principio a fin" data-explanation="From start to finish se traduce como de principio a fin.">
+<legend><span class="he-practice__number">29</span>From start to finish</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q29" value="a" aria-describedby="he-feedback-29">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Gran trabajo</span>
+<span>De vez en cuando</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q29" value="b" aria-describedby="he-feedback-29">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Trabajo difícil</span>
+<span>De principio a fin</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q29" value="c" aria-describedby="he-feedback-29">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Buena suerte</span>
+<span>Desde hoy en adelante</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q29" value="d" aria-describedby="he-feedback-29">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Gran oportunidad</span>
+<span>Paso a paso</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-29" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="Pasó un buen momento / La pasó bien" data-explanation="'Had a good time' expresa haber disfrutado o habérselo pasado bien en un período determinado.">
-<legend><span class="he-practice__number">30</span>Had a good time</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Gran trabajo" data-explanation="Great job significa gran trabajo o buen trabajo.">
+<legend><span class="he-practice__number">30</span>Great job</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q30" value="a" aria-describedby="he-feedback-30">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Llegó a tiempo</span>
+<span>Sigue intentando</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q30" value="b" aria-describedby="he-feedback-30">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Tuvo bastante tiempo</span>
+<span>Buena suerte</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q30" value="c" aria-describedby="he-feedback-30">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Perdió el tiempo</span>
+<span>Gran trabajo</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q30" value="d" aria-describedby="he-feedback-30">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Pasó un buen momento / La pasó bien</span>
+<span>Hasta luego</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-30" hidden></p>
 </fieldset>
 
 </section>
+
 <footer class="he-practice__footer">
 <div class="he-practice__actions">
 <button class="he-practice__button he-practice__button--primary" type="submit">Comprobar respuestas</button>
@@ -1264,33 +1284,36 @@
 </section>
 
 
-
-
-<section class="he-practice" data-practice lang="es" aria-labelledby="he-practice-title">
+<section id="practica-gramatica" class="he-practice he-practice--stage" data-practice lang="es" aria-labelledby="he-practice-title">
 <header class="he-practice__header">
 <div>
-<p class="he-practice__eyebrow">HELLO ENGLISH! / ZONA PRÁCTICA</p>
-<h2 id="he-practice-title">Gramática<span>.</span></h2>
-<p class="he-practice__subtitle">GRAMÁTICA</p>
-<p class="he-practice__intro">Pon a prueba lo aprendido.</p>
+<p class="he-practice__eyebrow">ETAPA 02 DE 04 · GRAMÁTICA</p>
+<h2 id="he-practice-title">Pon en práctica la gramática<span>.</span></h2>
+<p class="he-practice__subtitle">Estructuras y aplicación</p>
+<p class="he-practice__intro">Aplica las estructuras de la clase con ejercicios de selección y de completar.</p>
 </div>
 <div class="he-practice__count"><strong>30</strong><span>preguntas<br>para practicar</span></div>
 </header>
+
 <div class="he-practice__tracker">
 <span>Tu avance</span>
 <progress data-completion max="30" value="0" aria-label="Preguntas respondidas"></progress>
 <span data-count>0/30 · Faltan 30</span>
 </div>
+
 <form class="he-practice__form" novalidate>
 <section class="he-practice__group" aria-labelledby="he-grammar-title">
 <div class="he-practice__group-title">
-<span class="he-practice__step">01</span>
-<div><h3 id="he-grammar-title">GRAMÁTICA</h3><p>Selecciona o completa las estructuras gramaticales correctas.</p></div>
+<span class="he-practice__step">02</span>
+<div>
+<h3 id="he-grammar-title">EJERCICIOS DE GRAMÁTICA</h3>
+<p>Selecciona o completa las estructuras gramaticales correctas.</p>
+</div>
 <span class="he-practice__tag">30 preguntas</span>
 </div>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="she" data-explanation="Se debe usar el pronombre sujeto 'she' porque realiza la acción del verbo 'didn't answer'. No debe confundirse con el pronombre objeto 'her'.">
-<legend><span class="he-practice__number">01</span>I wrote to Ana, but _____ didn't answer.</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="her" data-explanation="Se requiere el pronombre objeto 'her' para referirse a Ana después del verbo 'wrote to'.">
+<legend><span class="he-practice__number">01</span>I wrote to Ana, but I didn't get an answer from ______.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="a" aria-describedby="he-feedback-1">
@@ -1305,326 +1328,326 @@
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="c" aria-describedby="he-feedback-1">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>him</span>
+<span>hers</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="d" aria-describedby="he-feedback-1">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>he</span>
+<span>him</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-1" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="me" data-explanation="Tras el verbo 'likes' se requiere un pronombre objeto en primera persona ('me'). Usar el pronombre sujeto 'I' en posición de objeto es un error común.">
-<legend><span class="he-practice__number">02</span>I love Maria, but I don't think she likes _____.</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="them" data-explanation="Para referirse al grupo musical 'Coldplay' (plural/ellos) como objeto de la oración se utiliza 'them'.">
+<legend><span class="he-practice__number">02</span>What do you think of Coldplay? — I don't like ______.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
-<input type="radio" name="he-q1" value="a" aria-describedby="he-feedback-2">
+<input type="radio" name="he-q2" value="a" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>me</span>
+<span>they</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q1" value="b" aria-describedby="he-feedback-2">
+<input type="radio" name="he-q2" value="b" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>I</span>
+<span>them</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q1" value="c" aria-describedby="he-feedback-2">
+<input type="radio" name="he-q2" value="c" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>she</span>
+<span>it</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q1" value="d" aria-describedby="he-feedback-2">
+<input type="radio" name="he-q2" value="d" aria-describedby="he-feedback-2">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>her</span>
+<span>their</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-2" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="them" data-explanation="'Coldplay' es un sustantivo plural (banda/grupo), por lo que el objeto correspondiente tras 'like' es el pronombre objeto plural 'them', no 'they' ni 'him'.">
-<legend><span class="he-practice__number">03</span>What do you think of Coldplay? – I don't like _____.</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="went" data-explanation="El pasado simple del verbo irregular 'go' es 'went'.">
+<legend><span class="he-practice__number">03</span>Yesterday, I ______ to work early in the morning.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="a" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>they</span>
+<span>go</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="b" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>he</span>
+<span>goed</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="c" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>them</span>
+<span>went</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="d" aria-describedby="he-feedback-3">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>him</span>
+<span>going</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-3" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="it" data-explanation="Para referirse a 'hip hop music' (cosa/género singular) como objeto directo del verbo 'love', se utiliza el pronombre neutro singular 'it'.">
-<legend><span class="he-practice__number">04</span>What do you think of hip hop music? – I love _____.</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="saw" data-explanation="El pasado simple del verbo irregular 'see' es 'saw'.">
+<legend><span class="he-practice__number">04</span>We ______ a movie at the cinema last night.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="a" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>he</span>
+<span>see</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="b" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>them</span>
+<span>seed</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="c" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>her</span>
+<span>seen</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="d" aria-describedby="he-feedback-4">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>it</span>
+<span>saw</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-4" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="went" data-explanation="'Went' es la forma irregular en pasado simple del verbo 'go'. No existe la forma 'goed', ni debe usarse el participio 'gone' para este contexto.">
-<legend><span class="he-practice__number">05</span>I _____ to work today.</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="didn't see" data-explanation="Para la negación en pasado simple se usa el auxiliar 'didn't' seguido del verbo en su forma base ('see').">
+<legend><span class="he-practice__number">05</span>We ______ the movie because we arrived late.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="a" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>go</span>
+<span>didn't see</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="b" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>went</span>
+<span>didn't saw</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="c" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>goed</span>
+<span>don't see</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="d" aria-describedby="he-feedback-5">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>gone</span>
+<span>not saw</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-5" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="saw" data-explanation="La expresión de tiempo pasado 'last night' exige el pasado simple 'saw'. Debe evitarse la confusión con la forma base 'see' o la forma incorrecta 'seed'.">
-<legend><span class="he-practice__number">06</span>We _____ a movie last night.</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="is going to get" data-explanation="Para planes futuros con 'she', la estructura correcta es 'is going to' seguida de la forma base del verbo ('get').">
+<legend><span class="he-practice__number">06</span>She ______ married next month.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="a" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>saw</span>
+<span>are going to get</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="b" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>see</span>
+<span>is going to get</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="c" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>seen</span>
+<span>is going get</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="d" aria-describedby="he-feedback-6">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>seed</span>
+<span>going to get</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-6" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="bought" data-explanation="'Bought' es el pasado simple irregular de 'buy'. Debe evitarse 'buyed', ya que es una sobrerregularización incorrecta.">
-<legend><span class="he-practice__number">07</span>I _____ the computer yesterday.</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="Are you going to be" data-explanation="La estructura interrogativa para planes futuros con 'you' es 'Are you going to be...?'.">
+<legend><span class="he-practice__number">07</span>______ in class tomorrow morning?</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="a" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>buy</span>
+<span>You are going to be</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="b" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>buyed</span>
+<span>Is you going to be</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="c" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>bought</span>
+<span>Are you going to be</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="d" aria-describedby="he-feedback-7">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>buys</span>
+<span>Do you going to be</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-7" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="didn't see" data-explanation="En el pasado simple negativo se utiliza el auxiliar 'didn't' seguido de la forma base del verbo ('see'). Usar 'didn't saw' es una doble marcación de pasado incorrecta.">
-<legend><span class="he-practice__number">08</span>We _____ the movie.</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="I'm not going to go" data-explanation="La forma negativa de futuro con 'I' requiere 'I'm not going to' seguido de la forma base del verbo ('go').">
+<legend><span class="he-practice__number">08</span>______ to university next year; I'm going to work instead.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="a" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>don't see</span>
+<span>I don't going to go</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q8" value="b" aria-describedby="he-feedback-8">
+<input type="radio" name="he-q8" value="b" aria-describedby="he-practice-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>didn't saw</span>
+<span>I not going to go</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="c" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>not saw</span>
+<span>I'm not go to</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="d" aria-describedby="he-feedback-8">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>didn't see</span>
+<span>I'm not going to go</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-8" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="didn't start" data-explanation="La negación en pasado simple requiere 'didn't' más el verbo en forma base ('start'). Poner el verbo en pasado ('didn't started') destruye la regla sintáctica del auxiliar.">
-<legend><span class="he-practice__number">09</span>The computer _____.</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="it" data-explanation="El pronombre objeto para referirse a la música hip hop (cosa/concepto singular) es 'it'.">
+<legend><span class="he-practice__number">09</span>What do you think of hip hop music? — I love ______!</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="a" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>didn't start</span>
+<span>it</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="b" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>didn't started</span>
+<span>them</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="c" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>don't start</span>
+<span>him</span>
 </label>
 <label class="he-practice__option">
-<input type="radio" name="he-q9" value="d" aria-describedby="he-practice-feedback-9">
+<input type="radio" name="he-q9" value="d" aria-describedby="he-feedback-9">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>not started</span>
+<span>its</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-9" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="is going to get" data-explanation="La estructura de futuro con planes es 'be going to + verbo en infinitivo'. Para la tercera persona singular 'she', corresponde la forma 'is going to get'.">
-<legend><span class="he-practice__number">10</span>She _____ married next month.</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="bought" data-explanation="El pasado simple del verbo irregular 'buy' es 'bought'.">
+<legend><span class="he-practice__number">10</span>I ______ a new computer yesterday.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="a" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>are going to get</span>
+<span>buyed</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="b" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>is going to get</span>
+<span>bought</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="c" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>is go to get</span>
+<span>buys</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="d" aria-describedby="he-feedback-10">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>going to get</span>
+<span>buying</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-10" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="Are you going to" data-explanation="En preguntas de futuro con 'be going to', el verbo auxiliar 'be' invierte su posición con el sujeto: 'Are you going to + verbo'. No debe omitirse el auxiliar 'be'.">
-<legend><span class="he-practice__number">11</span>_____ be in class tomorrow?</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="didn't start" data-explanation="En pasado negativo se utiliza 'didn't' con la forma base del verbo ('start').">
+<legend><span class="he-practice__number">11</span>The computer ______ this morning when I pressed the button.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="a" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>You are going to</span>
+<span>doesn't start</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="b" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Is you going to</span>
+<span>didn't started</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="c" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Are you going to</span>
+<span>didn't start</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q11" value="d" aria-describedby="he-feedback-11">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Do you going to</span>
+<span>not started</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-11" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="d" data-solution="I'm not going to" data-explanation="La forma negativa de futuro con 'be going to' para la primera persona singular es 'I'm not going to' (o 'I am not going to').">
-<legend><span class="he-practice__number">12</span>_____ go to university.</legend>
+<fieldset class="he-practice__question" data-answer="d" data-solution="sat" data-explanation="El pasado simple del verbo irregular 'sit' es 'sat'.">
+<legend><span class="he-practice__number">12</span>She ______ next to a famous movie star on the flight.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="a" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>I don't going to</span>
+<span>sit</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="b" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>I not going to</span>
+<span>sited</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="c" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>I isn't going to</span>
+<span>sitted</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q12" value="d" aria-describedby="he-feedback-12">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>I'm not going to</span>
+<span>sat</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-12" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="b" data-solution="Where are you going to go" data-explanation="Las preguntas con Wh- en futuro con 'be going to' siguen el orden: Wh- word + be + sujeto + going to + verbo principal ('Where are you going to go').">
-<legend><span class="he-practice__number">13</span>_____ next summer?</legend>
+<fieldset class="he-practice__question" data-answer="a" data-solution="Where are you going to go" data-explanation="El orden de preguntas con palabras interrogativas en futuro con 'be going to' es: Wh- + be + sujeto + going to + verbo base.">
+<legend><span class="he-practice__number">13</span>______ next summer for your vacations?</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="a" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Where you are going to go</span>
+<span>Where are you going to go</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="b" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Where are you going to go</span>
+<span>Where you are going to go</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="c" aria-describedby="he-feedback-13">
@@ -1634,187 +1657,188 @@
 <label class="he-practice__option">
 <input type="radio" name="he-q13" value="d" aria-describedby="he-feedback-13">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Where is you going to go</span>
+<span>Where are you go to</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-13" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="a" data-solution="Would you like to" data-explanation="Para hacer invitaciones educadas se emplea la fórmula fija 'Would you like to' seguida del verbo en infinitivo. Evitar usar 'Do you like' cuando se invita.">
-<legend><span class="he-practice__number">14</span>_____ come to my party?</legend>
+<fieldset class="he-practice__question" data-answer="b" data-solution="him" data-explanation="Se utiliza el pronombre objeto masculino 'him' para referirse a la persona recordada.">
+<legend><span class="he-practice__number">14</span>I met Carlos years ago, but I didn't remember ______.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="a" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>Would you like to</span>
+<span>he</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="b" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>Do you like to</span>
+<span>him</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="c" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>Are you like to</span>
+<span>his</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q14" value="d" aria-describedby="he-feedback-14">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>Would you to like</span>
+<span>he's</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-14" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="c" data-solution="I'd love to" data-explanation="'I'd love to' (contracción de 'I would love to') es la expresión idiomática enseñada para aceptar cordialmente una invitación. No debe usarse 'I love it' para responder a una invitación.">
-<legend><span class="he-practice__number">15</span>Would you like to come to my party? – Yes, _____.</legend>
+<fieldset class="he-practice__question" data-answer="c" data-solution="thought" data-explanation="El pasado simple del verbo de opinión 'think' es 'thought'.">
+<legend><span class="he-practice__number">15</span>How was the movie? — I ______ it was great.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="a" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">A</span>
-<span>I like</span>
+<span>thinked</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="b" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">B</span>
-<span>I do love</span>
+<span>think</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="c" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">C</span>
-<span>I'd love to</span>
+<span>thought</span>
 </label>
 <label class="he-practice__option">
 <input type="radio" name="he-q15" value="d" aria-describedby="he-feedback-15">
 <span class="he-practice__letter" aria-hidden="true">D</span>
-<span>I love it</span>
+<span>though</span>
 </label>
 </div>
 <p class="he-practice__feedback" id="he-feedback-15" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="didn't remember|did not remember" data-solution="didn't remember" data-explanation="Para la negación en pasado simple con primera persona 'I', se utiliza el auxiliar 'didn't' (o 'did not') seguido del verbo base 'remember'.">
-<legend><span class="he-practice__number">16</span>I _____ (not / remember) him when we met.</legend>
+<fieldset class="he-practice__question" data-answer="she didn't answer|she didn't answer." data-solution="she didn't answer" data-explanation="Estructura de pasado simple negativo: sujeto 'she' + auxiliar 'didn't' + verbo base 'answer'.">
+<legend><span class="he-practice__number">16</span>I wrote to Ana, but ______ (she / not / answer).</legend>
 <label class="he-practice__input-label" for="he-input-16">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-16" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-16 he-feedback-16" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-16">Escribe la forma negativa en pasado simple del verbo entre paréntesis.</p>
+<p class="he-practice__hint" id="he-hint-16">Escribe la frase negativa en pasado simple usando el sujeto 'she' y el verbo 'answer'.</p>
 <p class="he-practice__feedback" id="he-feedback-16" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="is going to walk|'s going to walk" data-solution="is going to walk" data-explanation="Para expresar un plan futuro con 'he' (tercera persona singular), la estructura es 'is going to' seguida de la forma base 'walk'.">
-<legend><span class="he-practice__number">17</span>Steven _____ (walk) the Great Wall of China next year.</legend>
+<fieldset class="he-practice__question" data-answer="she likes me|she likes me." data-solution="she likes me" data-explanation="En presente simple para la tercera persona singular 'she', se añade '-s' al verbo 'like' y el objeto directo de primera persona es 'me'.">
+<legend><span class="he-practice__number">17</span>I love Maria, but I don't think ______ (she / like / me).</legend>
 <label class="he-practice__input-label" for="he-input-17">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-17" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-17 he-feedback-17" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-17">Escribe la estructura afirmativa de futuro con be going to para Steven (he).</p>
+<p class="he-practice__hint" id="he-hint-17">Completa la oración en presente simple indicando concordancia con 'she' y el pronombre objeto 'me'.</p>
 <p class="he-practice__feedback" id="he-feedback-17" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="sat" data-solution="sat" data-explanation="'Sat' es la forma irregular del pasado simple del verbo 'sit'. Evitar formas no gramaticales como 'sitted'.">
-<legend><span class="he-practice__number">18</span>She _____ (sit) next to a movie star on the plane.</legend>
+<fieldset class="he-practice__question" data-answer="didn't see|did not see" data-solution="didn't see" data-explanation="La negación en pasado simple requiere 'didn't' (o 'did not') seguido de la forma base 'see'.">
+<legend><span class="he-practice__number">18</span>We ______ (not / see) the movie last night because the cinema was closed.</legend>
 <label class="he-practice__input-label" for="he-input-18">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-18" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-18 he-feedback-18" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-18">Escribe el pasado simple del verbo 'sit'.</p>
+<p class="he-practice__hint" id="he-hint-18">Escribe la forma negativa en pasado simple del verbo 'see'.</p>
 <p class="he-practice__feedback" id="he-feedback-18" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="How was" data-solution="How was" data-explanation="Para preguntar la evaluación u opinión sobre un evento o experiencia en pasado ('the movie'), se utiliza la estructura 'How was'.">
-<legend><span class="he-practice__number">19</span>_____ (How / be) the movie last night?</legend>
+<fieldset class="he-practice__question" data-answer="didn't start|did not start" data-solution="didn't start" data-explanation="En pasado simple negativo se utiliza el auxiliar 'didn't' junto al verbo en forma base 'start'.">
+<legend><span class="he-practice__number">19</span>The computer ______ (not / start) when I tried to use it yesterday.</legend>
 <label class="he-practice__input-label" for="he-input-19">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-19" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-19 he-feedback-19" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-19">Escribe la partícula interrogativa y el verbo be en pasado para la tercera persona singular.</p>
+<p class="he-practice__hint" id="he-hint-19">Escribe la negación en pasado simple del verbo 'start'.</p>
 <p class="he-practice__feedback" id="he-feedback-19" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="thought" data-solution="thought" data-explanation="'Thought' es el pasado simple del verbo irregular 'think'. Se debe evitar la confusión con 'thinked'.">
-<legend><span class="he-practice__number">20</span>I _____ (think) the movie was great.</legend>
+<fieldset class="he-practice__question" data-answer="didn't remember|did not remember" data-solution="didn't remember" data-explanation="La estructura negativa en pasado es 'didn't' más la forma base del verbo ('remember').">
+<legend><span class="he-practice__number">20</span>I saw him at the party, but I ______ (not / remember) his name.</legend>
 <label class="he-practice__input-label" for="he-input-20">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-20" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-20 he-feedback-20" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-20">Escribe el verbo 'think' en pasado simple.</p>
+<p class="he-practice__hint" id="he-hint-20">Escribe la forma negativa del verbo 'remember' en pasado simple.</p>
 <p class="he-practice__feedback" id="he-feedback-20" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="started" data-solution="started" data-explanation="'Start' es un verbo regular, por lo que su pasado simple se forma agregando la terminación '-ed': 'started'.">
-<legend><span class="he-practice__number">21</span>On April first, he _____ (start) walking from his house.</legend>
+<fieldset class="he-practice__question" data-answer="is going to get|'s going to get" data-solution="is going to get" data-explanation="Planes futuros con 'she': sujeto + 'is going to' + verbo en forma base ('get').">
+<legend><span class="he-practice__number">21</span>She ______ (get) married next month in Chicago.</legend>
 <label class="he-practice__input-label" for="he-input-21">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-21" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-21 he-feedback-21" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-21">Escribe la forma regular en pasado simple del verbo 'start'.</p>
+<p class="he-practice__hint" id="he-hint-21">Completa con la estructura de futuro de 'be going to' para 'she' con el verbo 'get'.</p>
 <p class="he-practice__feedback" id="he-feedback-21" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="slept" data-solution="slept" data-explanation="'Slept' es el pasado simple del verbo irregular 'sleep'. No se debe usar 'sleeped'.">
-<legend><span class="he-practice__number">22</span>One night, Steven _____ (sleep) in a tree.</legend>
+<fieldset class="he-practice__question" data-answer="Are you going to be|Are you going to be?" data-solution="Are you going to be" data-explanation="Estructura interrogativa de futuro: 'Are' + 'you' + 'going to' + verbo base ('be').">
+<legend><span class="he-practice__number">22</span>______ (you / be) in class tomorrow?</legend>
 <label class="he-practice__input-label" for="he-input-22">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-22" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-22 he-feedback-22" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-22">Escribe el pasado simple irregular del verbo 'sleep'.</p>
+<p class="he-practice__hint" id="he-hint-22">Escribe la pregunta en futuro usando 'be going to' para la persona 'you' y el verbo 'be'.</p>
 <p class="he-practice__feedback" id="he-feedback-22" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="met" data-solution="met" data-explanation="'Met' es la forma en pasado simple del verbo irregular 'meet'. Se utiliza para señalar que conoció o se encontró con personas en el pasado.">
-<legend><span class="he-practice__number">23</span>During his trip, he _____ (meet) many friendly people.</legend>
+<fieldset class="he-practice__question" data-answer="am not going to go|'m not going to go" data-solution="I'm not going to go" data-explanation="Estructura de futuro negativo para la primera persona: 'am not going to' (o ''m not going to') + verbo base 'go'.">
+<legend><span class="he-practice__number">23</span>I ______ (not / go) to university after finishing high school.</legend>
 <label class="he-practice__input-label" for="he-input-23">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-23" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-23 he-feedback-23" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-23">Escribe la forma en pasado simple del verbo 'meet'.</p>
+<p class="he-practice__hint" id="he-hint-23">Escribe la forma negativa de futuro con 'be going to' para 'I' con el verbo 'go'.</p>
 <p class="he-practice__feedback" id="he-feedback-23" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="returned" data-solution="returned" data-explanation="'Returned' es la forma regular en pasado simple del verbo 'return', añadiendo '-ed' al infinitivo.">
-<legend><span class="he-practice__number">24</span>Finally, Steven _____ (return) to his home in Ohio.</legend>
+<fieldset class="he-practice__question" data-answer="are you going to go|are you going to go?" data-solution="are you going to go" data-explanation="Orden sintáctico tras 'Where' en futuro: auxiliar 'are' + sujeto 'you' + 'going to' + verbo base 'go'.">
+<legend><span class="he-practice__number">24</span>Where ______ (you / go) next summer for your holidays?</legend>
 <label class="he-practice__input-label" for="he-input-24">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-24" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-24 he-feedback-24" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-24">Escribe el pasado simple regular del verbo 'return'.</p>
+<p class="he-practice__hint" id="he-hint-24">Completa la pregunta en futuro 'be going to' con el sujeto 'you' y el verbo 'go'.</p>
 <p class="he-practice__feedback" id="he-feedback-24" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="wrote" data-solution="wrote" data-explanation="'Wrote' es la forma irregular en pasado simple del verbo 'write'. No debe emplearse la forma base 'write' ni el participio 'written'.">
-<legend><span class="he-practice__number">25</span>He was famous, and he _____ (write) a book about his journey.</legend>
+<fieldset class="he-practice__question" data-answer="What do you think of|What do you think of?" data-solution="What do you think of" data-explanation="Estructura estándar para pedir opiniones sobre cosas o personas: 'What do you think of...?'.">
+<legend><span class="he-practice__number">25</span>______ (What / you / think of) hip hop music? — I love it!</legend>
 <label class="he-practice__input-label" for="he-input-25">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-25" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-25 he-feedback-25" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-25">Escribe la forma en pasado simple del verbo 'write'.</p>
+<p class="he-practice__hint" id="he-hint-25">Escribe la pregunta completa para pedir una opinión usando la expresión 'think of'.</p>
 <p class="he-practice__feedback" id="he-feedback-25" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="is going to be|'s going to be" data-solution="is going to be" data-explanation="Para un sujeto singular ('His next adventure' = it), la estructura de futuro con be going to requiere 'is going to' seguido del verbo 'be'.">
-<legend><span class="he-practice__number">26</span>His next adventure _____ (be) exciting and unforgettable.</legend>
+<fieldset class="he-practice__question" data-answer="I thought|thought" data-solution="I thought" data-explanation="Pasado simple del verbo 'think': 'thought'. Indica una opinión formada en el pasado.">
+<legend><span class="he-practice__number">26</span>How was the movie? — ______ (I / think) it was great.</legend>
 <label class="he-practice__input-label" for="he-input-26">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-26" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-26 he-feedback-26" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-26">Escribe la estructura afirmativa de futuro con be going to para tercera persona singular.</p>
+<p class="he-practice__hint" id="he-hint-26">Completa con el sujeto 'I' y la forma en pasado simple del verbo 'think'.</p>
 <p class="he-practice__feedback" id="he-feedback-26" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="did Steven start|did steven start" data-solution="did Steven start" data-explanation="Las preguntas en pasado simple llevan el auxiliar 'did' antes del sujeto ('Steven') y el verbo principal en forma base ('start').">
-<legend><span class="he-practice__number">27</span>When _____ (Steven / start) his walk around the world?</legend>
+<fieldset class="he-practice__question" data-answer="went|went to" data-solution="went" data-explanation="El pasado simple afirmativo del verbo irregular 'go' es 'went'.">
+<legend><span class="he-practice__number">27</span>Steven ______ (go) to Ireland by plane during his world journey.</legend>
 <label class="he-practice__input-label" for="he-input-27">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-27" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-27 he-feedback-27" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-27">Escribe la estructura interrogativa en pasado simple con el sujeto y el verbo entre paréntesis.</p>
+<p class="he-practice__hint" id="he-hint-27">Escribe la forma afirmativa en pasado simple del verbo 'go'.</p>
 <p class="he-practice__feedback" id="he-feedback-27" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="did he stay" data-solution="did he stay" data-explanation="La estructura interrogativa en pasado simple requiere la secuencia: Wh- word + did + pronombre sujeto ('he') + verbo base ('stay').">
-<legend><span class="he-practice__number">28</span>Where _____ (he / stay) during his trip?</legend>
+<fieldset class="he-practice__question" data-answer="is going to walk|'s going to walk" data-solution="is going to walk" data-explanation="Estructura de futuro para 'he' (Steven): 'is going to' + verbo en forma base ('walk').">
+<legend><span class="he-practice__number">28</span>Now Steven has a new plan; he ______ (walk) the Great Wall of China.</legend>
 <label class="he-practice__input-label" for="he-input-28">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-28" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-28 he-feedback-28" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-28">Escribe la forma interrogativa del pasado simple (auxiliar did + sujeto + verbo base).</p>
+<p class="he-practice__hint" id="he-hint-28">Escribe la forma de futuro con 'be going to' para tercera persona singular con el verbo 'walk'.</p>
 <p class="he-practice__feedback" id="he-feedback-28" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="are you going to do" data-solution="are you going to do" data-explanation="Para preguntar sobre planes futuros a 'you', la sintaxis es: What + are + you + going to + verbo principal en forma base ('do').">
-<legend><span class="he-practice__number">29</span>What _____ (you / do) tomorrow?</legend>
+<fieldset class="he-practice__question" data-answer="are going to go|'re going to go" data-solution="are going to go" data-explanation="Estructura afirmativa de futuro con 'they': auxiliar 'are' + 'going to' + verbo base 'go'.">
+<legend><span class="he-practice__number">29</span>Where are they going in the summer? — They ______ (go) to the beach.</legend>
 <label class="he-practice__input-label" for="he-input-29">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-29" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-29 he-feedback-29" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-29">Escribe la estructura interrogativa completa para futuro con be going to con 'you'.</p>
+<p class="he-practice__hint" id="he-hint-29">Completa la respuesta con la estructura de futuro 'be going to' para el sujeto 'they' y el verbo 'go'.</p>
 <p class="he-practice__feedback" id="he-feedback-29" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="am going to study|'m going to study" data-solution="am going to study" data-explanation="La expresión de un plan futuro con el sujeto 'I' requiere 'am going to' (o su contracción ''m going to') seguida del verbo base 'study'.">
-<legend><span class="he-practice__number">30</span>I _____ (study) English tomorrow.</legend>
+<fieldset class="he-practice__question" data-answer="bought|bought a" data-solution="bought" data-explanation="Pasado simple afirmativo del verbo irregular 'buy': 'bought'.">
+<legend><span class="he-practice__number">30</span>Yesterday, I ______ (buy) a new umbrella because it started to rain.</legend>
 <label class="he-practice__input-label" for="he-input-30">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-30" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-30 he-feedback-30" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-30">Escribe la estructura afirmativa de futuro con be going to para 'I'.</p>
+<p class="he-practice__hint" id="he-hint-30">Escribe la forma afirmativa en pasado simple del verbo 'buy'.</p>
 <p class="he-practice__feedback" id="he-feedback-30" hidden></p>
 </fieldset>
 
 </section>
+
 <footer class="he-practice__footer">
 <div class="he-practice__actions">
 <button class="he-practice__button he-practice__button--primary" type="submit">Comprobar respuestas</button>
@@ -1833,191 +1857,196 @@
 </section>
 
 
-
-<section class="he-practice" data-practice lang="es" aria-labelledby="he-practice-title">
+<section id="practica-writing" class="he-practice he-practice--stage" data-practice lang="es" aria-labelledby="he-practice-title">
 <header class="he-practice__header">
 <div>
-<p class="he-practice__eyebrow">HELLO ENGLISH! / ZONA PRÁCTICA</p>
-<h2 id="he-practice-title">Writing<span>.</span></h2>
-<p class="he-practice__subtitle">WRITING</p>
-<p class="he-practice__intro">Pon a prueba lo aprendido.</p>
+<p class="he-practice__eyebrow">ETAPA 03 DE 04 · WRITING</p>
+<h2 id="he-practice-title">Construye tus propias frases<span>.</span></h2>
+<p class="he-practice__subtitle">Producción escrita</p>
+<p class="he-practice__intro">Demuestra lo aprendido mediante traducciones y transformaciones escritas.</p>
 </div>
 <div class="he-practice__count"><strong>20</strong><span>preguntas<br>para practicar</span></div>
 </header>
+
 <div class="he-practice__tracker">
 <span>Tu avance</span>
 <progress data-completion max="20" value="0" aria-label="Preguntas respondidas"></progress>
 <span data-count>0/20 · Faltan 20</span>
 </div>
+
 <form class="he-practice__form" novalidate>
 <section class="he-practice__group" aria-labelledby="he-writing-title">
 <div class="he-practice__group-title">
-<span class="he-practice__step">01</span>
-<div><h3 id="he-writing-title">WRITING</h3><p>Escribe las frases en inglés siguiendo cada instrucción.</p></div>
+<span class="he-practice__step">03</span>
+<div>
+<h3 id="he-writing-title">EJERCICIOS DE WRITING</h3>
+<p>Escribe las frases en inglés siguiendo cada instrucción.</p>
+</div>
 <span class="he-practice__tag">20 preguntas</span>
 </div>
 
-<fieldset class="he-practice__question" data-answer="I wrote to Ana, but she didn't answer.|I wrote to Ana, but she didn't answer|I wrote to Ana, but she did not answer.|I wrote to Ana, but she did not answer" data-solution="I wrote to Ana, but she didn't answer." data-explanation="En pasado simple, el verbo 'escribir' en afirmativo es 'wrote' (irregular). Para la negación se utiliza el auxiliar 'didn't' seguido del verbo en su forma base ('answer'). El pronombre sujeto 'she' reemplaza a Ana. Error común: usar 'didn't answered' agregando -ed tras el auxiliar en pasado.">
-<legend><span class="he-practice__number">01</span>Traduce al inglés: Le escribí a Ana, pero ella no respondió.</legend>
+<fieldset class="he-practice__question" data-answer="I went to work today.|I went to work today" data-solution="I went to work today." data-explanation="Pasado simple afirmativo con sujeto de primera persona (I) y el verbo irregular go en pasado (went).">
+<legend><span class="he-practice__number">01</span>Traduce: &quot;Fui al trabajo hoy.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-1">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-1" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-1 he-feedback-1" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-1">Escribe en pasado simple usando el pronombre de sujeto adecuado.</p>
+<p class="he-practice__hint" id="he-hint-1">Usa la primera persona del singular (I) en pasado simple.</p>
 <p class="he-practice__feedback" id="he-feedback-1" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="What do you think of hip hop music?|What do you think of hip hop music" data-solution="What do you think of hip hop music?" data-explanation="Para solicitar la opinión sobre un género musical u objeto, la estructura interrogativa fija en presente simple es 'What do you think of...?' seguida del sustantivo sin artículo genérico. Error común: confundir la preposición 'of' con 'about' o 'from', o descuidar el auxiliar 'do'.">
-<legend><span class="he-practice__number">02</span>Traduce al inglés: ¿Qué piensas de la música hip hop?</legend>
+<fieldset class="he-practice__question" data-answer="She is going to get married next month.|She's going to get married next month.|She is going to get married next month|She's going to get married next month" data-solution="She is going to get married next month." data-explanation="Estructura de futuro con be going to para planes (She is going to / She's going to).">
+<legend><span class="he-practice__number">02</span>Traduce: &quot;Ella se va a casar el próximo mes.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-2">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-2" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-2 he-feedback-2" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-2">Formula una pregunta de opinión en presente simple usando "think of".</p>
+<p class="he-practice__hint" id="he-hint-2">Utiliza la estructura be going to con el sujeto She.</p>
 <p class="he-practice__feedback" id="he-feedback-2" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="She sat next to a movie star.|She sat next to a movie star" data-solution="She sat next to a movie star." data-explanation="El pasado simple del verbo 'sit' es el verbo irregular 'sat'. La preposición de lugar compuesta para 'al lado de' es 'next to', seguida del sintagma 'a movie star'. Error común: usar 'sitted' o emplear incorrectamente 'near to' o 'beside to'.">
-<legend><span class="he-practice__number">03</span>Traduce al inglés: Ella se sentó al lado de una estrella de cine.</legend>
+<fieldset class="he-practice__question" data-answer="We saw a movie last night.|We saw a movie last night" data-solution="We saw a movie last night." data-explanation="Pasado simple afirmativo con sujeto plural (We) y el verbo irregular see en pasado (saw).">
+<legend><span class="he-practice__number">03</span>Traduce: &quot;Vimos una película anoche.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-3">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-3" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-3 he-feedback-3" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-3">Usa la forma pasada irregular de "sit" y la preposición compuesta "next to".</p>
+<p class="he-practice__hint" id="he-hint-3">Usa la primera persona del plural (We) y la expresión last night.</p>
 <p class="he-practice__feedback" id="he-feedback-3" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="She's going to get married next month.|She's going to get married next month|She is going to get married next month.|She is going to get married next month" data-solution="She's going to get married next month." data-explanation="Para expresar un plan o intención futura se utiliza 'be going to' + verbo en infinitivo ('get married'). El sujeto 'she' exige la forma verbal 'is' (o la contracción 'she's'). No se utiliza preposición ante 'next month'. Error común: omitir el verbo 'be' (*she going to*) o agregar preposición (*in next month*).">
-<legend><span class="he-practice__number">04</span>Traduce al inglés: Ella se va a casar el próximo mes.</legend>
+<fieldset class="he-practice__question" data-answer="I bought the computer yesterday.|I bought the computer yesterday" data-solution="I bought the computer yesterday." data-explanation="Pasado simple con el verbo irregular buy (bought) y el adverbio de tiempo yesterday.">
+<legend><span class="he-practice__number">04</span>Traduce: &quot;Compré la computadora ayer.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-4">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-4" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-4 he-feedback-4" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-4">Expresa futuro con la estructura "be going to" y la frase verbal "get married".</p>
+<p class="he-practice__hint" id="he-hint-4">Usa la primera persona del singular (I) en pasado simple.</p>
 <p class="he-practice__feedback" id="he-feedback-4" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Where are you going to go next summer?|Where are you going to go next summer" data-solution="Where are you going to go next summer?" data-explanation="En preguntas de futuro con 'be going to', el orden sintáctico requiere: Partícula interrogativa ('Where') + verbo 'be' en presente ('are') + sujeto ('you') + 'going to' + verbo principal en infinitivo ('go'). Error común: invertir el sujeto y el auxiliar (*Where you are going...*) u omitir el verbo base 'go'.">
-<legend><span class="he-practice__number">05</span>Traduce al inglés: ¿A dónde vas a ir el próximo verano?</legend>
+<fieldset class="he-practice__question" data-answer="What do you think of hip hop music?|What do you think of hip hop music|What do you think of hip-hop music?|What do you think of hip-hop music" data-solution="What do you think of hip hop music?" data-explanation="Pregunta de opinión en presente simple usando What do you think of...?">
+<legend><span class="he-practice__number">05</span>Traduce: &quot;¿Qué piensas de la música hip hop?&quot;</legend>
 <label class="he-practice__input-label" for="he-input-5">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-5" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-5 he-feedback-5" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-5">Aplica la estructura interrogativa de futuro de intenciones con "Where".</p>
+<p class="he-practice__hint" id="he-hint-5">Usa la estructura interrogativa What do you think of...?</p>
 <p class="he-practice__feedback" id="he-feedback-5" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="He walked every day and stayed in a tent.|He walked every day and stayed in a tent" data-solution="He walked every day and stayed in a tent." data-explanation="Los verbos regulares 'walk' y 'stay' añaden el sufijo -ed en pasado simple ('walked', 'stayed'). La locución 'every day' se escribe en dos palabras como adverbio. 'En una carpa' se traduce como 'in a tent'. Error común: confundir el pasado de 'stay' o escribir 'everyday' (adjetivo) como adverbio.">
-<legend><span class="he-practice__number">06</span>Traduce al inglés: Él caminaba todos los días y se quedaba en una carpa.</legend>
+<fieldset class="he-practice__question" data-answer="Where are you going to go next summer?|Where are you going to go next summer" data-solution="Where are you going to go next summer?" data-explanation="Pregunta sobre planes futuros usando la palabra interrogativa Where + be going to.">
+<legend><span class="he-practice__number">06</span>Traduce: &quot;¿A dónde vas a ir el próximo verano?&quot;</legend>
 <label class="he-practice__input-label" for="he-input-6">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-6" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-6 he-feedback-6" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-6">Utiliza el pasado simple de verbos regulares para narrar hábitos pasados.</p>
+<p class="he-practice__hint" id="he-hint-6">Usa Where y la estructura interrogativa de be going to.</p>
 <p class="he-practice__feedback" id="he-feedback-6" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="There, he's going to walk from the Andes mountains to the Amazon River.|There, he's going to walk from the Andes mountains to the Amazon River|There, he is going to walk from the Andes mountains to the Amazon River.|There, he is going to walk from the Andes mountains to the Amazon River" data-solution="There, he's going to walk from the Andes mountains to the Amazon River." data-explanation="Se utiliza la correlación de preposiciones 'from... to...' para marcar origen y destino. 'The Andes mountains' y 'the Amazon River' requieren el artículo determinado 'the' y mayúsculas en nombres propios. Se emplea 'be going to' para planes futuros. Error común: omitir 'the' antes de cadenas montañosas o ríos.">
-<legend><span class="he-practice__number">07</span>Traduce al inglés: Allí, él va a caminar desde las montañas de los Andes hasta el río Amazonas.</legend>
+<fieldset class="he-practice__question" data-answer="I wrote to Ana, but she didn't answer.|I wrote to Ana, but she didn't answer|I wrote to Ana, but she did not answer.|I wrote to Ana, but she did not answer" data-solution="I wrote to Ana, but she didn't answer." data-explanation="Oración compuesta en pasado simple con conector causativo/adversativo (but) y negación con didn't.">
+<legend><span class="he-practice__number">07</span>Traduce: &quot;Le escribí a Ana, pero ella no respondió.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-7">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-7" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-7 he-feedback-7" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-7">Usa "from... to...", "be going to" y la puntuación tras el adverbio "There".</p>
+<p class="he-practice__hint" id="he-hint-7">Usa wrote en la primera parte y didn't answer en la segunda.</p>
 <p class="he-practice__feedback" id="he-feedback-7" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Would you like to come to my party?|Would you like to come to my party" data-solution="Would you like to come to my party?" data-explanation="La fórmula fija para realizar una invitación cortés en inglés es 'Would you like to' + verbo en infinitivo ('come'). La preposición de dirección tras 'come' es 'to'. Error común: usar 'Do you want come' u omitir la partícula 'to' del infinitivo (*Would you like come*).">
-<legend><span class="he-practice__number">08</span>Traduce al inglés: ¿Te gustaría venir a mi fiesta?</legend>
+<fieldset class="he-practice__question" data-answer="I didn't remember him.|I didn't remember him|I did not remember him.|I did not remember him" data-solution="I didn't remember him." data-explanation="Oración negativa en pasado simple usando didn't + verbo en forma base (remember) y objeto de pronombre (him).">
+<legend><span class="he-practice__number">08</span>Traduce: &quot;No lo recordé.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-8">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-8" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-8 he-feedback-8" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-8">Usa la estructura estándar de invitación cortés con "Would you like to".</p>
+<p class="he-practice__hint" id="he-hint-8">Usa la primera persona (I) con la negación en pasado y el pronombre objeto him.</p>
 <p class="he-practice__feedback" id="he-feedback-8" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Last weekend, I met my friends.|Last weekend, I met my friends" data-solution="Last weekend, I met my friends." data-explanation="El pasado simple del verbo 'meet' (reunirse/conocer) es el irregular 'met'. El complemento temporal 'Last weekend' se coloca comúnmente al inicio de la oración separado por coma. Error común: usar 'meeted' como forma pasada o agregar la preposición 'with' cuando se expresa reunirse en contexto social básico en este nivel (*met with my friends*).">
-<legend><span class="he-practice__number">09</span>Traduce al inglés: El fin de semana pasado me reuní con mis amigos.</legend>
+<fieldset class="he-practice__question" data-answer="Would you like to come to my party?|Would you like to come to my party" data-solution="Would you like to come to my party?" data-explanation="Estructura formal para realizar invitaciones empleando Would you like to...">
+<legend><span class="he-practice__number">09</span>Traduce: &quot;¿Te gustaría venir a mi fiesta?&quot;</legend>
 <label class="he-practice__input-label" for="he-input-9">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-9" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-9 he-feedback-9" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-9">Usa el verbo irregular "meet" en pasado simple y la locución "Last weekend".</p>
+<p class="he-practice__hint" id="he-hint-9">Usa la fórmula de invitación Would you like to...</p>
 <p class="he-practice__feedback" id="he-feedback-9" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="He has to take an umbrella because it's going to rain.|He has to take an umbrella because it's going to rain|He has to take an umbrella because it is going to rain.|He has to take an umbrella because it is going to rain" data-solution="He has to take an umbrella because it's going to rain." data-explanation="Se combina la obligación en presente 'has to' + 'take an umbrella' (llevar un paraguas) con la conjunción de causa 'because' y la predicción futura basada en evidencia 'it's going to rain'. 'Umbrella' empieza con sonido vocálico, requiriendo el artículo indeterminado 'an'. Error común: escribir 'a umbrella' o usar 'take a umbrella'.">
-<legend><span class="he-practice__number">10</span>Traduce al inglés: Él tiene que llevar un paraguas porque va a llover.</legend>
+<fieldset class="he-practice__question" data-answer="I'm going to study English.|I'm going to study English|I am going to study English.|I am going to study English" data-solution="I'm going to study English." data-explanation="Expresión de planes personales en futuro mediante la estructura I'm going to.">
+<legend><span class="he-practice__number">10</span>Traduce: &quot;Voy a estudiar inglés.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-10">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-10" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-10 he-feedback-10" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-10">Combina "has to take", el artículo "an umbrella" y la predicción "it's going to rain".</p>
+<p class="he-practice__hint" id="he-hint-10">Utiliza la primera persona (I) con la estructura de futuro be going to.</p>
 <p class="he-practice__feedback" id="he-feedback-10" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="I don't love Maria, but I think she likes me.|I don't love Maria, but I think she likes me|I do not love Maria, but I think she likes me.|I do not love Maria, but I think she likes me" data-solution="I don't love Maria, but I think she likes me." data-explanation="Para transformar la oración afirmativa 'I love Maria' a negativa en presente simple con primera persona, se añade la estructura auxiliar 'don't' antes del verbo base ('love'). La segunda cláusula ('but I think she likes me') se mantiene intacta. Error común: negar el verbo principal con 'not' sin auxiliar (*I love not Maria*) o alterar la segunda proposición.">
-<legend><span class="he-practice__number">11</span>Transforma a NEGATIVA la primera cláusula de la frase: "I love Maria, but I think she likes me."</legend>
+<fieldset class="he-practice__question" data-answer="We didn't see the movie.|We didn't see the movie|We did not see the movie.|We did not see the movie" data-solution="We didn't see the movie." data-explanation="Transformación de afirmación a negación en pasado simple usando el auxiliar did not / didn't y el verbo en infinitivo sin to.">
+<legend><span class="he-practice__number">11</span>Transforma a NEGATIVO: &quot;We saw the movie.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-11">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-11" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-11 he-feedback-11" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-11">Niega la primera idea usando "don't" y conserva el resto de la frase igual.</p>
+<p class="he-practice__hint" id="he-hint-11">Escribe la frase en forma negativa conservando el sujeto We.</p>
 <p class="he-practice__feedback" id="he-feedback-11" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Did we see a movie last night?|Did we see a movie last night" data-solution="Did we see a movie last night?" data-explanation="Para transformar la oración en pasado simple 'We saw a movie last night' a interrogativa, se antecede el auxiliar 'Did', el sujeto se mantiene ('we') y el verbo pasa de la forma pasada ('saw') a su forma base ('see'). Error común: mantener el verbo en pasado (*Did we saw...*) o descuidar la inversión sujeto-auxiliar.">
-<legend><span class="he-practice__number">12</span>Transforma a INTERROGATIVA la frase: "We saw a movie last night."</legend>
+<fieldset class="he-practice__question" data-answer="The computer didn't start.|The computer didn't start|The computer did not start.|The computer did not start" data-solution="The computer didn't start." data-explanation="Transformación a forma negativa en pasado simple; el verbo irregular/regular vuelve a su forma base (start).">
+<legend><span class="he-practice__number">12</span>Transforma a NEGATIVO: &quot;The computer started.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-12">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-12" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-12 he-feedback-12" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-12">Inicia la pregunta con el auxiliar "Did" y restituye el verbo principal a su forma base.</p>
+<p class="he-practice__hint" id="he-hint-12">Usa el auxiliar negativo del pasado simple (didn't) con el verbo principal.</p>
 <p class="he-practice__feedback" id="he-feedback-12" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="I didn't buy the computer yesterday.|I didn't buy the computer yesterday|I did not buy the computer yesterday.|I did not buy the computer yesterday" data-solution="I didn't buy the computer yesterday." data-explanation="La negación del pasado simple de 'I bought' requiere el auxiliar negativo 'didn't' seguido inmediatamente de la forma infinitiva o base del verbo, que es 'buy'. Los complementos 'the computer yesterday' no cambian. Error común: mantener 'bought' tras el auxiliar (*didn't bought*) o negar con 'don't'.">
-<legend><span class="he-practice__number">13</span>Transforma a NEGATIVA la frase: "I bought the computer yesterday."</legend>
+<fieldset class="he-practice__question" data-answer="I'm not going to go to university.|I'm not going to go to university|I am not going to go to university.|I am not going to go to university" data-solution="I'm not going to go to university." data-explanation="Negación de planes futuros modificando el verbo be en negativo (am not / 'm not) dentro de la estructura be going to.">
+<legend><span class="he-practice__number">13</span>Transforma a NEGATIVO: &quot;I'm going to go to university.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-13">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-13" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-13 he-feedback-13" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-13">Usa la estructura "didn't" + verbo en forma base para negar en pasado simple.</p>
+<p class="he-practice__hint" id="he-hint-13">Niega la estructura de futuro manteniendo la primera persona.</p>
 <p class="he-practice__feedback" id="he-feedback-13" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Was the movie great?|Was the movie great" data-solution="Was the movie great?" data-explanation="Para transformar la pregunta de opinión abierta 'How was the movie?' en una pregunta cerrada de respuesta sí/no sobre el adjetivo 'great', se invierte el verbo en pasado 'Was' al inicio, seguido del sujeto 'the movie' y el atributo 'great'. Error común: conservar 'How' al inicio (*How was the movie great?*) o usar auxiliar 'Did'.">
-<legend><span class="he-practice__number">14</span>Transforma la pregunta abierta "How was the movie?" en una PREGUNTA CERRADA de respuesta sí/no evaluando si estuvo genial ("great").</legend>
+<fieldset class="he-practice__question" data-answer="Are you going to be in class tomorrow?|Are you going to be in class tomorrow" data-solution="Are you going to be in class tomorrow?" data-explanation="Transformación de afirmación a interrogación invirtiendo la posición del verbo be con el sujeto (Are you...).">
+<legend><span class="he-practice__number">14</span>Transforma a PREGUNTA: &quot;You are going to be in class tomorrow.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-14">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-14" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-14 he-feedback-14" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-14">Elimina "How" e inicia la pregunta directamente con el verbo en pasado "Was".</p>
+<p class="he-practice__hint" id="he-hint-14">Invierte el orden del sujeto y el verbo be para formar una pregunta.</p>
 <p class="he-practice__feedback" id="he-feedback-14" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Are you going to be in class tomorrow?|Are you going to be in class tomorrow" data-solution="Are you going to be in class tomorrow?" data-explanation="Para transformar la oración negativa 'I'm not going to be in class tomorrow' a una pregunta dirigida a 'you', se debe usar la segunda persona del verbo 'be' en posición inicial ('Are'), seguida del sujeto 'you', el bloque 'going to' y el verbo en estado base 'be'. Error común: usar 'Is you...' o colocar el sujeto al inicio.">
-<legend><span class="he-practice__number">15</span>Transforma a INTERROGATIVA dirigida a "you" la frase: "I'm not going to be in class tomorrow."</legend>
+<fieldset class="he-practice__question" data-answer="How was the movie?|How was the movie" data-solution="How was the movie?" data-explanation="Estructura interrogativa en pasado simple usando la palabra interrogativa How y la tercera persona del singular del verbo be en pasado (was).">
+<legend><span class="he-practice__number">15</span>Transforma a PREGUNTA usando &quot;How&quot;: &quot;The movie was great.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-15">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-15" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-15 he-feedback-15" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-15">Escribe la pregunta en futuro con "be going to" en segunda persona del singular/plural.</p>
+<p class="he-practice__hint" id="he-hint-15">Pregunta sobre la calidad de la película usando la palabra How.</p>
 <p class="he-practice__feedback" id="he-feedback-15" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="They didn't start walking from their house in Bethel.|They didn't start walking from their house in Bethel|They did not start walking from their house in Bethel.|They did not start walking from their house in Bethel" data-solution="They didn't start walking from their house in Bethel." data-explanation="Al cambiar el sujeto singular 'He' al plural 'They', el pasado simple negativo mantiene el auxiliar 'didn't' y el verbo en forma base 'start'. Sin embargo, el adjetivo posesivo debe cambiar en concordancia de 'his house' a 'their house'. Error común: olvidar cambiar el posesivo 'his' por 'their'.">
-<legend><span class="he-practice__number">16</span>Transforma la frase al sujeto "They" y en forma NEGATIVA: "He started walking from his house in Bethel."</legend>
+<fieldset class="he-practice__question" data-answer="I don't like them.|I don't like them|I do not like them.|I do not like them" data-solution="I don't like them." data-explanation="Sustitución del sustantivo plural (Coldplay / the band members) por el pronombre objeto correspondiente en tercera persona del plural (them).">
+<legend><span class="he-practice__number">16</span>Reemplaza el objeto por un PRONOMBRE: &quot;I don't like Coldplay.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-16">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-16" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-16 he-feedback-16" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-16">Cambia el sujeto a "They", usa "didn't start" y ajusta el adjetivo posesivo a "their".</p>
+<p class="he-practice__hint" id="he-hint-16">Sustituye el nombre del grupo por el pronombre objeto adecuado para plural (them).</p>
 <p class="he-practice__feedback" id="he-feedback-16" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Is he studying Chinese now?|Is he studying Chinese now" data-solution="Is he studying Chinese now?" data-explanation="Para transformar la oración afirmativa en presente continuo 'He's studying Chinese now' a interrogativa, se invierte la posición del verbo 'be' ('Is') situándolo antes del sujeto ('he'). El gerundio 'studying' y los complementos permanecen idénticos. Error común: usar el auxiliar 'Does' (*Does he studying...*) o mantener el orden declarativo.">
-<legend><span class="he-practice__number">17</span>Transforma a INTERROGATIVA la frase: "He's studying Chinese now."</legend>
+<fieldset class="he-practice__question" data-answer="I love it.|I love it" data-solution="I love it." data-explanation="Sustitución de un sustantivo incontable/cosa singular (hip hop music) por el pronombre objeto it.">
+<legend><span class="he-practice__number">17</span>Reemplaza el objeto por un PRONOMBRE: &quot;I love hip hop music.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-17">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-17" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-17 he-feedback-17" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-17">Realiza la inversión sujeto-verbo del presente continuo para formar la pregunta.</p>
+<p class="he-practice__hint" id="he-hint-17">Usa el pronombre objeto singular inanimado it para reemplazar el sustantivo.</p>
 <p class="he-practice__feedback" id="he-feedback-17" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="What do you think of Coldplay?|What do you think of Coldplay" data-solution="What do you think of Coldplay?" data-explanation="Para transformar la respuesta declarativa de opinión 'I don't like them' en la pregunta que la originó sobre la banda 'Coldplay', se utiliza la estructura 'What do you think of Coldplay?'. Error común: formular una pregunta cerrada con 'Do you like...' cuando se solicita reconstruir la pregunta de opinión general enseñada.">
-<legend><span class="he-practice__number">18</span>Transforma la respuesta "I don't like them" en la PREGUNTA DE OPINIÓN correspondiente sobre la banda "Coldplay".</legend>
+<fieldset class="he-practice__question" data-answer="He didn't walk in the snow.|He didn't walk in the snow|He did not walk in the snow.|He did not walk in the snow" data-solution="He didn't walk in the snow." data-explanation="Transformación de un enunciado afirmativo en pasado simple a su forma negativa usando didn't + verbo base.">
+<legend><span class="he-practice__number">18</span>Transforma a NEGATIVO: &quot;He walked in the snow.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-18">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-18" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-18 he-feedback-18" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-18">Reconstruye la pregunta de opinión estándar con "What do you think of...".</p>
+<p class="he-practice__hint" id="he-hint-18">Expresa la acción en forma negativa conservando el sujeto He.</p>
 <p class="he-practice__feedback" id="he-feedback-18" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Did Steven return to his home in Ohio?|Did Steven return to his home in Ohio" data-solution="Did Steven return to his home in Ohio?" data-explanation="Para transformar la afirmación en pasado 'Steven returned to his home in Ohio' a interrogativa, se añade el auxiliar 'Did' al inicio de la frase, seguido del sujeto 'Steven', y el verbo principal cambia de 'returned' a su forma base sin la desinencia de pasado 'return'. Error común: dejar el verbo 'returned' en pasado tras el auxiliar 'Did'.">
-<legend><span class="he-practice__number">19</span>Transforma a INTERROGATIVA la frase: "Steven returned to his home in Ohio."</legend>
+<fieldset class="he-practice__question" data-answer="When did Steven start his walk?|When did Steven start his walk" data-solution="When did Steven start his walk?" data-explanation="Formación de preguntas en pasado simple con palabra interrogativa (When) + auxiliar (did) + sujeto (Steven) + verbo base (start).">
+<legend><span class="he-practice__number">19</span>Transforma a PREGUNTA usando &quot;When&quot;: &quot;Steven started his walk on April first.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-19">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-19" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-19 he-feedback-19" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-19">Inicia con "Did" y coloca el verbo "return" en su forma base (infinitivo sin "to").</p>
+<p class="he-practice__hint" id="he-hint-19">Formula la pregunta referente al momento en que comenzó la caminata usando When.</p>
 <p class="he-practice__feedback" id="he-feedback-19" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="Is his next adventure going to be exciting, long, and unforgettable?|Is his next adventure going to be exciting, long, and unforgettable" data-solution="Is his next adventure going to be exciting, long, and unforgettable?" data-explanation="En la estructura de futuro con 'be going to', la transformación a pregunta exige colocar la forma concordante del verbo 'be' ('Is', pues el sujeto singular es 'his next adventure') al comienzo de la oración, seguido de 'going to be' y los tres adjetivos. Error común: usar el auxiliar 'Does' o mantener 'His next adventure is going to...'.">
-<legend><span class="he-practice__number">20</span>Transforma a INTERROGATIVA la frase: "His next adventure is going to be exciting, long, and unforgettable."</legend>
+<fieldset class="he-practice__question" data-answer="Where did he stay?|Where did he stay" data-solution="Where did he stay?" data-explanation="Formación de preguntas sobre lugar en pasado simple con Where + did + sujeto + verbo en infinitivo.">
+<legend><span class="he-practice__number">20</span>Transforma a PREGUNTA usando &quot;Where&quot;: &quot;He stayed in a tent.&quot;</legend>
 <label class="he-practice__input-label" for="he-input-20">Tu respuesta</label>
 <input class="he-practice__input" id="he-input-20" type="text" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="he-hint-20 he-feedback-20" placeholder="Escribe aquí…">
-<p class="he-practice__hint" id="he-hint-20">Coloca el verbo "Is" al principio de la frase para construir la forma interrogativa.</p>
+<p class="he-practice__hint" id="he-hint-20">Formula la pregunta correspondiente a la ubicación usando la palabra Where.</p>
 <p class="he-practice__feedback" id="he-feedback-20" hidden></p>
 </fieldset>
 
 </section>
+
 <footer class="he-practice__footer">
 <div class="he-practice__actions">
 <button class="he-practice__button he-practice__button--primary" type="submit">Comprobar respuestas</button>
@@ -2036,32 +2065,36 @@
 </section>
 
 
-
-<section class="he-practice" data-practice lang="es" aria-labelledby="he-practice-title">
+<section id="practica-listening" class="he-practice he-practice--stage" data-practice lang="es" aria-labelledby="he-practice-title">
 <header class="he-practice__header">
 <div>
-<p class="he-practice__eyebrow">HELLO ENGLISH! / ZONA PRÁCTICA</p>
-<h2 id="he-practice-title">Listening<span>.</span></h2>
-<p class="he-practice__subtitle">LISTENING</p>
-<p class="he-practice__intro">Pon a prueba lo aprendido.</p>
+<p class="he-practice__eyebrow">ETAPA 04 DE 04 · LISTENING</p>
+<h2 id="he-practice-title">Comprueba tu comprensión auditiva<span>.</span></h2>
+<p class="he-practice__subtitle">Escucha y comprensión</p>
+<p class="he-practice__intro">Recuerda la historia o los diálogos de la clase y distingue lo verdadero de lo falso.</p>
 </div>
 <div class="he-practice__count"><strong>10</strong><span>preguntas<br>para practicar</span></div>
 </header>
+
 <div class="he-practice__tracker">
 <span>Tu avance</span>
 <progress data-completion max="10" value="0" aria-label="Preguntas respondidas"></progress>
 <span data-count>0/10 · Faltan 10</span>
 </div>
+
 <form class="he-practice__form" novalidate>
 <section class="he-practice__group" aria-labelledby="he-listening-title">
 <div class="he-practice__group-title">
-<span class="he-practice__step">01</span>
-<div><h3 id="he-listening-title">LISTENING</h3><p>Escucha la historia o el diálogo de la clase y marca verdadero o falso.</p></div>
+<span class="he-practice__step">04</span>
+<div>
+<h3 id="he-listening-title">EJERCICIOS DE LISTENING</h3>
+<p>Escucha la historia o el diálogo de la clase y marca verdadero o falso.</p>
+</div>
 <span class="he-practice__tag">10 preguntas</span>
 </div>
 
-<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la historia se menciona explícitamente que Steven Newman comenzó su caminata el primero de abril (April first) desde su casa en Bethel, Ohio.">
-<legend><span class="he-practice__number">01</span>Steven Newman empezó a caminar alrededor del mundo el primero de abril desde su casa en Bethel, Ohio.</legend>
+<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la clase se menciona explícitamente que Steven Newman es un profesor de inglés en los Estados Unidos.">
+<legend><span class="he-practice__number">01</span>Steven Newman is an English teacher in the United States.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q1" value="true" aria-describedby="he-feedback-1">
@@ -2077,8 +2110,8 @@
 <p class="he-practice__feedback" id="he-feedback-1" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Es falso porque el audio afirma que fue perseguido por animales salvajes en África, mientras que el problema del clima severo (nieve en las montañas) lo tuvo en España.">
-<legend><span class="he-practice__number">02</span>En África, Steven enfrentó problemas debido al clima frío y la nieve en las montañas.</legend>
+<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Steven comenzó su caminata el 1 de abril (April first), no el 1 de mayo.">
+<legend><span class="he-practice__number">02</span>Steven started walking around the world on May first.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q2" value="true" aria-describedby="he-feedback-2">
@@ -2094,8 +2127,8 @@
 <p class="he-practice__feedback" id="he-feedback-2" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Es falso porque la clase indica explícitamente que regresó a su casa después de cuatro años (four years) de caminata, no dos.">
-<legend><span class="he-practice__number">03</span>Steven regresó a su casa en Ohio después de dos años exactos de viaje.</legend>
+<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="En España caminó con nieve en las montañas, mientras que los animales salvajes lo persiguieron en África.">
+<legend><span class="he-practice__number">03</span>In Spain, wild animals chased Steven and he slept in a tree.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q3" value="true" aria-describedby="he-feedback-3">
@@ -2111,8 +2144,8 @@
 <p class="he-practice__feedback" id="he-feedback-3" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="El Speaker 1 señala exactamente que para su siguiente plan, Steven está estudiando chino porque va a caminar por la Gran Muralla China.">
-<legend><span class="he-practice__number">04</span>Para su próximo viaje a la Gran Muralla China, Steven se encuentra actualmente estudiando chino.</legend>
+<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="La historia indica que Steven regresó a su hogar en Ohio después de cuatro años de caminata.">
+<legend><span class="he-practice__number">04</span>Steven returned home to Ohio after four years of walking.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q4" value="true" aria-describedby="he-feedback-4">
@@ -2128,8 +2161,8 @@
 <p class="he-practice__feedback" id="he-feedback-4" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Es falso porque el audio especifica que en Bolivia planea caminar desde las montañas de los Andes hacia el río Amazonas (Amazon River).">
-<legend><span class="he-practice__number">05</span>El plan de Steven en Bolivia consiste en caminar desde la costa del océano hacia las montañas de los Andes.</legend>
+<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la clase se explica explícitamente que Steven está estudiando chino actualmente para su próximo viaje a la Gran Muralla.">
+<legend><span class="he-practice__number">05</span>Steven is studying Chinese now for his next plan.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q5" value="true" aria-describedby="he-feedback-5">
@@ -2145,8 +2178,8 @@
 <p class="he-practice__feedback" id="he-feedback-5" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la sección de situaciones cortas de escucha, ante la pregunta 'What does Jim have to drink?', la respuesta directa es 'He has water'.">
-<legend><span class="he-practice__number">06</span>En una de las situaciones de diálogo revisadas, Jim tiene agua para beber.</legend>
+<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="En Bolivia va a caminar desde las montañas de los Andes hasta el río Amazonas, no en el río Nilo.">
+<legend><span class="he-practice__number">06</span>In Bolivia, Steven is going to walk from the Andes mountains to the Nile River.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q6" value="true" aria-describedby="he-feedback-6">
@@ -2162,8 +2195,8 @@
 <p class="he-practice__feedback" id="he-feedback-6" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Es falso porque en la sección de pronunciación se establece explícitamente que la fuerza de acento en la palabra 'tomorrow' está en la sílaba 'mor' (/təˈmɑːroʊ/).">
-<legend><span class="he-practice__number">07</span>De acuerdo con el repaso de pronunciación, la sílaba tónica de la palabra 'tomorrow' recae en la primera sílaba ('to').</legend>
+<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la sección de pronunciación se enseña que el acento tónico (fuerza de voz) en &quot;tomorrow&quot; recae en la sílaba &quot;mor&quot;.">
+<legend><span class="he-practice__number">07</span>The main stress in the word &quot;tomorrow&quot; is on the syllable &quot;mor&quot;.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q7" value="true" aria-describedby="he-feedback-7">
@@ -2179,8 +2212,8 @@
 <p class="he-practice__feedback" id="he-feedback-7" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="El Speaker 2 menciona explícitamente que la mujer es a quien le gusta la música clásica ('The woman likes classical music').">
-<legend><span class="he-practice__number">08</span>En el diálogo de preguntas cortas sobre gustos musicales, es la mujer a quien le gusta la música clásica.</legend>
+<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="En el diálogo se responde explícitamente: &quot;They’re going to go to the beach&quot; (Van a ir a la playa).">
+<legend><span class="he-practice__number">08</span>In the short dialogue, the speakers are going to go to the mountains in the summer.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q8" value="true" aria-describedby="he-feedback-8">
@@ -2196,8 +2229,8 @@
 <p class="he-practice__feedback" id="he-feedback-8" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="Es falso porque el audio especifica que para ir a Europa, Steven viajó en avión (went to Ireland by plane) tras haber caminado hacia Nueva York y Boston.">
-<legend><span class="he-practice__number">09</span>Steven cruzó el océano para llegar a Irlanda viajando en un barco de pasajeros.</legend>
+<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la conversación de práctica sobre bebidas se especifica exactamente: &quot;He has water&quot;.">
+<legend><span class="he-practice__number">09</span>Jim has water to drink.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q9" value="true" aria-describedby="he-feedback-9">
@@ -2213,8 +2246,8 @@
 <p class="he-practice__feedback" id="he-feedback-9" hidden></p>
 </fieldset>
 
-<fieldset class="he-practice__question" data-answer="true" data-solution="Verdadero" data-explanation="En la sección de situaciones de escucha se pregunta 'Where are they going to go in the summer?' y se responde directamente 'They’re going to go to the beach'.">
-<legend><span class="he-practice__number">10</span>En las situaciones de práctica de conversación, las personas tienen planeado ir a la playa durante el verano.</legend>
+<fieldset class="he-practice__question" data-answer="false" data-solution="Falso" data-explanation="En los diálogos de la clase se indica que a la mujer (the woman) le gusta la música clásica, no al hombre.">
+<legend><span class="he-practice__number">10</span>The man likes classical music according to the listening dialogue.</legend>
 <div class="he-practice__options">
 <label class="he-practice__option">
 <input type="radio" name="he-q10" value="true" aria-describedby="he-feedback-10">
@@ -2231,6 +2264,7 @@
 </fieldset>
 
 </section>
+
 <footer class="he-practice__footer">
 <div class="he-practice__actions">
 <button class="he-practice__button he-practice__button--primary" type="submit">Comprobar respuestas</button>
@@ -2247,7 +2281,6 @@
 </footer>
 </form>
 </section>
-
 
 
 </body>

@@ -1,0 +1,193 @@
+/* ============================================================
+   PRACTICA GRAMMAR · PALETA ROJO / VERDE
+   Cargar DESPUÉS de practica-2.css.
+   Solo cambia colores: sin alterar tamaños, márgenes ni lógica.
+   Rojo #c0392b · Verde #24513A
+   ============================================================ */
+
+/* Variables del componente existente (se mantienen sus nombres). */
+.he-practice {
+  --hp-orange: #24513A;
+  --hp-soft: #edf5ef;
+  --hp-ink: #202c36;
+  --hp-muted: #66727c;
+  --hp-line: #dce7df;
+  border-color: #dce7df;
+}
+
+/* Portada universal y sus cuatro vínculos internos. */
+.he-learning-intro {
+  background: linear-gradient(120deg, #f1f7f2 0%, #ffffff 75%);
+  border-color: #cfdfd3;
+}
+.he-learning-intro__eyebrow,
+.he-learning-bridge__kicker { color: #24513A; }
+.he-learning-intro h2 span { color: #c0392b; }
+.he-learning-intro__steps span { border-color: #d3e1d7; }
+.he-learning-intro__steps b {
+  background: #e5f1e8;
+  color: #24513A;
+}
+.he-learning-intro__steps span:hover {
+  border-color: #24513A;
+  background: #edf5ef;
+}
+.he-learning-intro__steps span:focus-within { outline-color: #24513A; }
+.he-learning-intro__steps a:focus-visible { outline-color: #24513A; }
+.he-learning-bridge__line { background: #dce7df; }
+
+/* Encabezados de las cuatro etapas. */
+.he-practice .he-practice__header { border-top-color: #24513A; }
+.he-practice--stage .he-practice__eyebrow { color: #24513A; }
+.he-practice h2 span { color: #c0392b; }
+.he-practice .he-practice__count strong,
+.he-practice .he-practice__score { color: #24513A; }
+.he-practice .he-practice__step,
+.he-practice--stage .he-practice__step {
+  background: #e5f1e8;
+  color: #24513A;
+}
+.he-practice--stage .he-practice__group-title { border-bottom-color: #dce7df; }
+.he-practice--stage .he-practice__tracker {
+  border-top-color: #dce7df;
+  border-bottom-color: #dce7df;
+}
+
+/* Barras de avance y puntuación (Chrome, Safari y Firefox). */
+.he-practice progress { accent-color: #24513A; }
+.he-practice progress::-webkit-progress-value,
+.he-practice .he-practice__tracker progress::-webkit-progress-value { background: #24513A; }
+.he-practice progress::-moz-progress-bar,
+.he-practice .he-practice__tracker progress::-moz-progress-bar { background: #24513A; }
+.he-practice .he-practice__tracker [data-count] {
+  background: #e5f1e8;
+  color: #24513A;
+}
+
+/* Alternativas: hover, seleccionadas y navegación con teclado. */
+.he-practice .he-practice__option:hover {
+  border-color: #9fbcaa;
+  background: #f4f9f5;
+}
+.he-practice .he-practice__option:has(input:checked) {
+  border-color: #24513A;
+  background: #edf5ef;
+}
+.he-practice .he-practice__option input:checked + .he-practice__letter {
+  background: #24513A;
+  border-color: #24513A;
+  color: #fff;
+}
+.he-practice .he-practice__option:has(input:focus-visible),
+.he-practice input:focus-visible,
+.he-practice button:focus-visible { outline-color: #24513A; }
+
+/* Campos de escritura. */
+.he-practice .he-practice__input:focus,
+.he-practice .he-practice__input:focus-visible,
+.he-practice .he-practice__question[data-state] .he-practice__input:focus {
+  border-color: #24513A;
+}
+
+/* Acciones y resultados. */
+.he-practice .he-practice__button--primary {
+  background: #24513A;
+  border-color: #24513A;
+  color: #ffffff;
+}
+.he-practice .he-practice__button--primary:hover {
+  background: #193c2a;
+  border-color: #193c2a;
+}
+.he-practice .he-practice__feedback {
+  background: #fcf0ee;
+  color: #a12d23;
+}
+.he-practice .he-practice__question[data-state="correct"] .he-practice__feedback {
+  background: #e8f5ec;
+  color: #24513A;
+}
+.he-practice .he-practice__option.is-correct {
+  border-color: #24513A;
+  background: #e8f5ec;
+}
+.he-practice .he-practice__option.is-wrong {
+  border-color: #c0392b;
+  background: #fcf0ee;
+}
+.he-practice .he-practice__question[data-state="incorrect"] .he-practice__input {
+  border-color: #c0392b;
+}
+.he-practice .he-practice__question[data-state="correct"] .he-practice__input {
+  border-color: #24513A;
+  background: #f4f9f5;
+}
+
+/* ============================================================
+   EQUILIBRIO VISUAL: ROJO COMO ACENTO PRINCIPAL DE ACCIÓN
+   El verde permanece en avance, etapas y respuestas correctas.
+   ============================================================ */
+
+/* Navegación: números rojos y vínculo rojo al interactuar. */
+.he-learning-intro__steps b {
+  background: #f9e9e7;
+  color: #c0392b;
+}
+.he-learning-intro__steps span:hover,
+.he-learning-intro__steps span:focus-within {
+  border-color: #c0392b;
+  background: #fff5f3;
+}
+.he-learning-intro__steps span:focus-within,
+.he-learning-intro__steps a:focus-visible {
+  outline-color: #c0392b;
+}
+.he-learning-intro__steps a:hover,
+.he-learning-intro__steps a:focus-visible {
+  color: #c0392b;
+}
+
+/* Cantidad de preguntas y puntuación: rojo visible. */
+.he-practice .he-practice__count strong,
+.he-practice .he-practice__score {
+  color: #c0392b;
+}
+
+/* Acciones principales rojas. */
+.he-practice .he-practice__button--primary {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+}
+.he-practice .he-practice__button--primary:hover {
+  background: #9f2f23;
+  border-color: #9f2f23;
+}
+.he-practice .he-practice__button--primary:focus-visible {
+  outline-color: #c0392b;
+}
+
+/* Selección: acento rojo; validación mantiene verde/rojo semánticos. */
+.he-practice .he-practice__option:hover {
+  border-color: #d99a93;
+  background: #fff8f7;
+}
+.he-practice .he-practice__option:has(input:checked) {
+  border-color: #c0392b;
+  background: #fff3f1;
+}
+.he-practice .he-practice__option input:checked + .he-practice__letter {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+}
+.he-practice .he-practice__option:has(input:focus-visible),
+.he-practice input:focus-visible,
+.he-practice button:focus-visible {
+  outline-color: #c0392b;
+}
+.he-practice .he-practice__input:focus,
+.he-practice .he-practice__input:focus-visible,
+.he-practice .he-practice__question[data-state] .he-practice__input:focus {
+  border-color: #c0392b;
+}
