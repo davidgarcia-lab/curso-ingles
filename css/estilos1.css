@@ -645,3 +645,188 @@ details[open] summary::after{
   cursor: pointer;
 }
 
+
+/* ==========================================
+   NAVEGACIÓN FLOTANTE - ENGLISH EXPLORER
+   DISEÑO MINIMALISTA PROFESIONAL
+========================================== */
+
+.barra-clases {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9998;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    width: max-content;
+    max-width: calc(100vw - 24px);
+    padding: 5px;
+
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid #e5e7eb;
+    border-radius: 50px;
+
+    box-shadow:
+        0 4px 24px rgba(15, 23, 42, 0.09),
+        0 1px 3px rgba(15, 23, 42, 0.04);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* BOTONES GENERALES */
+
+.barra-clases > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    height: 42px;
+    padding: 0 16px;
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    font-family: Inter, Arial, sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    text-decoration: none;
+    white-space: nowrap;
+
+    box-shadow: none;
+    outline: none;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+/* ICONOS */
+
+.barra-clases > a span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* VOLVER AL CURSO */
+
+.barra-clases > .barra-volver,
+.barra-clases > .barra-volver:visited {
+    color: #64748b;
+    background: transparent;
+}
+
+.barra-clases > .barra-volver:hover {
+    color: #0f172a;
+    background: #f1f5f9;
+}
+
+/* ANTERIOR */
+
+.barra-clases > .barra-anterior,
+.barra-clases > .barra-anterior:visited {
+    color: #334155;
+    background: #f1f5f9;
+}
+
+.barra-clases > .barra-anterior:hover {
+    color: #0f172a;
+    background: #e2e8f0;
+}
+
+/* SIGUIENTE */
+
+.barra-clases > .barra-siguiente,
+.barra-clases > .barra-siguiente:visited {
+    color: #ffffff !important;
+    background: #c83f35;
+}
+
+.barra-clases > .barra-siguiente:hover {
+    color: #ffffff !important;
+    background: #ae332a;
+    box-shadow: 0 3px 9px rgba(200, 63, 53, .20);
+}
+
+/* INTERACCIÓN */
+
+.barra-clases > a:active {
+    transform: scale(.97);
+}
+
+.barra-clases > a:focus-visible {
+    outline: 2px solid #64748b;
+    outline-offset: 3px;
+}
+
+/* ESPACIO INFERIOR */
+
+body {
+    padding-bottom: 100px;
+}
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 580px) {
+
+    .barra-clases {
+        bottom: 12px;
+        gap: 2px;
+        padding: 4px;
+        max-width: calc(100vw - 16px);
+    }
+
+    .barra-clases > a {
+        height: 39px;
+        padding: 0 10px;
+        font-size: 11px;
+        gap: 4px;
+    }
+
+    .barra-clases > a span {
+        font-size: 17px;
+    }
+
+    /* Evita superposición con traducción */
+    #toggleBtn {
+        bottom: 72px;
+        right: 12px;
+    }
+}
+
+/* PANTALLAS MUY PEQUEÑAS */
+
+@media (max-width: 360px) {
+
+    .barra-clases > a {
+        padding: 0 7px;
+        font-size: 10px;
+    }
+
+    .barra-clases {
+        gap: 1px;
+    }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+    .barra-clases > a {
+        transition: none;
+    }
+}
