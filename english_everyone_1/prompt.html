@@ -1,0 +1,229 @@
+PROMPT: Conversión de libreto a
+HTML de estudio (bilingüe EN/ES)
+Actúa como experto en edición
+educativa, traducción pedagógica
+y HTML.
+Convierte el libreto que te
+entregue en un fragmento HTML
+claro, ordenado y fácil de estudiar, sin eliminar
+ni resumir contenido. Solo
+elimina las etiquetas "Speaker 1:" /
+"Speaker 2:".
+Entrega SIEMPRE el resultado en
+una ventana/visor de código HTML
+editable, nunca como texto plano en el chat.
+1. REGLA DE ORO
+Conserva el 100% del texto
+original: saludos, conectores,
+ejemplos, explicaciones. No traduzcas dos veces
+un mismo fragmento que ya venga
+con su traducción.
+2. ETIQUETADO DE IDIOMA (regla
+base, aplica a TODO el documento)
+Todo texto en inglés → <span
+id="sufijo_30">...</span>
+Toda traducción al español que
+corresponda directamente a una
+frase/palabra en inglés → <span id="sufijo_31">...</span>
+El español narrativo, explicativo
+o instructivo (que no traduce
+nada puntual) no lleva span.
+Esta regla aplica también dentro
+de párrafos narrativos: si dentro
+de un <p> aparece una palabra o frase
+en inglés con su traducción
+directa, ambas se etiquetan igual que en cualquier
+otro bloque.
+Ejemplo de título + primer
+párrafo:
+ 
+html
+ 
+<h2><span id="sufijo_30">Título
+en inglés</span> – <span
+id="sufijo_31">Traducción en
+español</span></h2><p>Texto
+narrativo libre. Hoy veremos
+<span id="sufijo_30">English
+Grammar</span>, y en
+especial el uso de <span
+id="sufijo_30">used to</span> –
+<span id="sufijo_31">solía</span>.</p>
+2.1. TITULO, va al inicio
+Título: <h2><span
+id="sufijo_30">título</span>
+– <span id="sufijo_31">traducción</span></h2>
+(h2 solo para título, nunca en
+párrafos)
+ 
+3. REGLA ÚNICA PARA CONTENIDO SIN
+TRADUCCIÓN (aplica IGUAL a
+lecturas Y diálogos)
+Esta es la regla que más se está
+fallando — trátala como
+obligatoria y sin excepciones:
+ 
+Cualquier bloque 100% en inglés
+sin traducción previa (lectura,
+listening, historia o diálogo) debe traducirse
+y la traducción nueva SIEMPRE va
+envuelta en <span id="sufijo_23">...</span>,
+colocada inmediatamente después
+de cada línea o párrafo en inglés (no al final
+de todo el bloque).
+No importa si es un párrafo
+narrativo o una línea de diálogo
+con "A:" / "B:": si no
+trae traducción original, la
+traducción que tú agregues usa sufijo_23, nunca sufijo_31
+(ese se reserva para traducciones
+que YA estaban en el libreto original).
+ 
+3.1 Lectura CON traducción
+original (solo etiquetar, no
+traducir de nuevo)
+ 
+html
+ 
+<div
+class="reading">
+<p><em><span
+id="sufijo_30">Texto
+en
+inglés...</span></em></p>
+<p><span id="sufijo_31">Traducción
+que ya venía en el
+libreto...</span></p></div>
+3.2 Lectura SIN traducción (tú
+agregas la traducción → sufijo_23)
+ 
+html
+ 
+<div
+class="reading">
+<p><em><span
+id="sufijo_30">Texto
+en
+inglés...</span></em></p>
+<p><span id="sufijo_23">Traducción
+nueva que tú generas...</span></p></div>
+3.3 Diálogo CON traducción
+original (solo etiquetar)
+ 
+html
+ 
+<div
+class="dialogue">
+<p style="margin-left:
+30px;"><strong>A:</strong>
+<span id="sufijo_30">Hi,
+how are you?</span> –
+<span id="sufijo_31">Hola, ¿cómo
+estás?</span></p>
+<p style="margin-left:
+30px;"><strong>B:</strong>
+<span id="sufijo_30">I'm
+fine, thanks.</span> –
+<span id="sufijo_31">Estoy bien,
+gracias.</span></p></div>
+3.4 Diálogo SIN traducción (tú
+agregas la traducción → sufijo_23,
+MISMA lógica que 3.2)
+ 
+html
+ 
+<div
+class="dialogue">
+<p style="margin-left:
+30px;"><strong>A:</strong>
+<span id="sufijo_30">Hi,
+how are you?</span> –
+<span id="sufijo_23">Hola, ¿cómo
+estás?</span></p>
+<p style="margin-left:
+30px;"><strong>B:</strong>
+<span id="sufijo_30">I'm
+fine, thanks.</span> –
+<span id="sufijo_23">Estoy bien,
+gracias.</span></p></div>
+Checklist mental antes de
+etiquetar cualquier línea de
+diálogo o lectura:
+ 
+¿Esta línea en inglés ya tenía
+traducción en el libreto
+original? → sufijo_31
+¿No tenía traducción y la
+generaste tú? → sufijo_23
+Nunca mezcles ambos sufijos en la
+misma línea.
+4. CONTENEDORES
+Tipo de contenidoEnvolver
+enVocabulario<div
+class="vocabulary"><ul><li>...</li></ul></div>Ejemplos
+/ frases clave<div
+class="examples"><ul><li>...</li></ul></div>Conversaciones<div
+class="dialogue">
+(ver sección 3.3 / 3.4)Gramática<div
+class="grammar"> con
+subtítulos y listas (afirmativo / negativo /
+preguntas si aplica)Lecturas,
+listening, historias<div
+class="reading">
+(ver sección 3.1 / 3.2)
+5. LISTAS vs. NARRATIVO (SEPARACIÓN OBLIGATORIA)
+En <li> va SOLO la unidad de estudio pura: vocabulario, frase modelo, pregunta/respuesta o estructura gramatical (inglés + traducción).
+Frases narrativas ("Por ejemplo:", "La pregunta puede ser:", "Otra pregunta:", "Observa que...") van en <p> normal, fuera del <li> y fuera del div.
+
+Si una misma línea del libreto mezcla narrativa y ejemplos, ES OBLIGATORIO ROMPERLA. No dejes el ejemplo atrapado en el <p>. 
+Sigue esta estructura si hay narrativa antes y después:
+1. <p>Narrativa previa</p>
+2. <div class="examples"><ul><li><span id="sufijo_30">Ejemplo en inglés</span> – <span id="sufijo_31">Traducción</span></li></ul></div>
+3. <p>Narrativa posterior (si la hay)</p>
+
+EJEMPLO DE APLICACIÓN:
+Original: "Y puedes responder así: My name is Jacob. - Mi nombre es Jacob. Observa que en español no repetimos las letras."
+Conversión correcta:
+<p>Y puedes responder así:</p>
+<div class="examples">
+  <ul>
+    <li><span id="sufijo_30">My name is Jacob.</span> - <span id="sufijo_31">Mi nombre es Jacob.</span></li>
+  </ul>
+</div>
+<p>Observa que en español no repetimos las letras.</p>
+6. RESTRICCIONES DE FORMATO
+No generes página HTML completa:
+nada de <!DOCTYPE>,
+<html>, <head>, <body>,
+<style>, CSS ni JavaScript.
+Solo etiquetas semánticas:
+<h2>, <p>,
+<ul>, <li>, <div
+class="...">,
+<em>, <strong>, <span id="sufijo_30/28/29">.
+Palabras en formato IPA → en
+negrita (<strong>).
+<h2> únicamente para el
+título de la clase, nunca dentro
+de párrafos.
+7. VERIFICACIÓN FINAL (antes de
+entregar)
+No falta texto original.
+No hay traducciones duplicadas.
+Todo el inglés está en sufijo_30.
+Traducciones que YA venían en el
+libreto → sufijo_31.
+Traducciones nuevas que tú
+generaste (lecturas Y diálogos
+sin traducción) → sufijo_23.
+Ningún diálogo sin traducción
+quedó solo con sufijo_30 (debe
+llevar su sufijo_23).
+Vocabulario y ejemplos están en
+listas, no en párrafos corridos.
+Resultado entregado en ventana de
+código HTML editable.
+Texto a procesar:
+[PEGA AQUÍ TU LIBRETO COMPLETO]
+ 
+ 
